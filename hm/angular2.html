@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular测试</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<style type="text/css">
+			input.ng-invalid{
+				background: darksalmon;
+			}
+		</style>
+	</head>
+	<body>
+		<form ng-app="" name="myForm">
+			<input type="email" name="myEmail" ng-model="sss" required/>
+			<!-- 当ng-show返回的为true时就会显示span中的内容-->
+			<span ng-show="myForm.myEmail.$error.email">这不是一个合法的邮箱</span>
+		</form>
+	</body>
+</html>

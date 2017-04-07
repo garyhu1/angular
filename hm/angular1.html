@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>angular测试</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!--<div ng-app="">
+			<p>名字：<input type="text" ng-model="name"></p>
+			<h1>Hello <span ng-bind="name"></span></h1>
+			<h2>Hello {{name}}</h1>
+		</div>-->
+		
+		<div ng-app="myApp" ng-controller="myContr">
+			<p>年龄：<input type="text" ng-model="name"></p>
+			<p> {{name}}</p>
+		</div>
+
+		<script type="text/javascript" charset="utf-8">
+			var app = angular.module('myApp',[]);
+			app.controller('myContr',function($scope){
+				$scope.name = "Jone";
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>angular测试ng-select</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div ng-app="myApp" ng-controller="myContr">
+			<select ng-init="selectName=names[0]" ng-model="selectName" ng-options="x for x in names"></select>
+			<p>选择：{{opt}}</p>
+			<select ng-model="sel" ng-init="sel=names[0]">
+				<option ng-repeat="y in names">{{y}}</option>
+			</select>
+			<p>选择：{{z}}</p>
+			<!--演示对象-->
+			<select ng-model="sel1" ng-options="x.name for x in users"></select>
+			<p>选择：{{sel1}}</p>
+			<select ng-model="sel2">
+				<option ng-repeat="x in users">{{x.name}}</option>
+			</select>
+			<p>选择：{{sel2}}</p>
+			<select ng-model="sel3" ng-options="x for (x,y) in sites"></select>
+			<p>选择：{{sel3}}</p>
+
+			<p>选择一辆车:</p>
+
+			<select ng-model="selectedCar" ng-options="y.brand for (x, y) in cars"></select>
+			<p>你选择的是: {{selectedCar.brand}}</p>
+			<p>型号为: {{selectedCar.model}}</p>
+			<p>颜色为: {{selectedCar.color}}</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app = angular.module("myApp", [])
+			.controller("myContr", function($scope) {
+				$scope.names = ['JavaScript', 'Android', 'Php', 'Phony'];
+				$scope.$watch("selectName", function() {
+					$scope.opt = $scope.selectName;
+				});
+				$scope.$watch("sel", function() {
+					$scope.z = $scope.sel;
+				});
+				$scope.users = [
+					{ name: "Jimmy", country: "USA" },
+					{ name: "Hadda", country: "Franch" },
+					{ name: "Ilida", country: "Basszia" }
+				];
+				$scope.sites = {
+					st1: "Taobao",
+					st2: "JingDong",
+					st3: "WeiPin"
+				};
+				$scope.cars = {
+					car01: { brand: "Ford", model: "Mustang", color: "red" },
+					car02: { brand: "Fiat", model: "500", color: "white" },
+					car03: { brand: "Volvo", model: "XC90", color: "black" }
+				}
+			});
+	</script>
+
+</html>
