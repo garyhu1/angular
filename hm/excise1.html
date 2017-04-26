@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>练习$parse</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="myapp" ng-controller="mycontrl">
+			<div my-attr = 'obj.name' my-directive>testing</div>
+		</div>
+	</body>
+	<script>
+		var app = angular.module('myapp',[]);
+		app.controller('mycontrl',function($scope){
+			$scope.obj = {
+				age : '20',
+				name : 'Juddy'
+			}
+		});
+		app.directive('myDirective',function($log,$parse){
+			return function (scope,elem,attrs) {
+				//把'my-attr'的属性值解析到一个函数中
+				var model = $parse(attrs.myAttr);
+				//model现在是一个函数，调用它可以获取表达式中的值
+				//打印作用域中的obj.name的值
+				$log.log(model(scope));
+				//绑定点击事件
+				elem.bind('click',function(){
+					//model.assign也是一个函数，用来更新作用域中表达式的值
+					model.assign(scope,'New Name');
+					//传播model更新的值
+					scope.$apply();
+				});
+			}
+		});
+	</script>
+</html>

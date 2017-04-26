@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular事件</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myContr">
+			<button ng-click="func()">点击</button>
+			<p>{{count}}</p>
+			<button ng-click="show()">显示/隐藏</button>
+			<div ng-hide="flag">
+				<input type="text" ng-model="firstName" />
+				<input type="text" ng-model="lastName" />
+				<p>{{firstName+"和"+lastName}}</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app = angular.module("myApp",[])
+		      .controller("myContr",function($scope){
+		      	  $scope.count = 1;
+		      	  $scope.func = function (){
+		      	  	  $scope.count = $scope.count+1;
+		      	  }
+		      	  $scope.firstName = "Joe";
+		      	  $scope.lastName = "Doly";
+		      	  $scope.flag=true;
+		      	  $scope.show = function(){
+		      	  	$scope.flag = !$scope.flag;
+		      	  }
+		      });
+	</script>
+</html>

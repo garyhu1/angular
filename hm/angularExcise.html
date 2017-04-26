@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular练习</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<style type="text/css">
+			#text{
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>我的angularJs练习</h1>
+		<div ng-app="myApp" ng-controller="myContr">
+			<textarea id="text" ng-model="message"></textarea>
+			<button ng-click="save()">保存</button>
+			<button ng-click="clear()">清除</button>
+			<h3>剩余字数：<span ng-bind="left()"></span></h3>
+		</div>
+	</body>
+	<script>
+		var app = angular.module("myApp",[])
+		     .controller("myContr",function($scope){
+		     	$scope.message = "";
+		     	$scope.left = function(){
+		     		return 100 - $scope.message.length;
+		     	};
+		     	$scope.save = function(){
+		     		alert("保存成功");
+		     	}
+		     	$scope.clear = function(){
+		     		$scope.message = "";
+		     	}
+		     });
+	</script>
+</html>

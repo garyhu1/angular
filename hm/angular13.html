@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angularJS 动画</title>
+		<style type="text/css">
+			div{
+				transition: all linear 0.5s;
+				width: 300px;
+				height: 100px;
+				position: relative;
+				background: forestgreen;
+				top: 0;
+				left: 0;
+			}
+			.ng-hide{
+				width: 0;
+				height: 0;
+				background: transparent;
+				top: -200px;
+				left: 200px;
+			}
+		</style>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+	</head>
+	<!--如果我们应用已经设置了应用名，可以把 ngAnimate 直接添加在模型中：-->
+	<!-- 例：
+		var app = angular.module('myApp', ['ngAnimate']);
+	-->
+	<body ng-app="ngAnimate">
+		<p>隐藏DIV:<input type="checkbox" ng-model="myShow"></p>
+		<div ng-hide="myShow"></div>
+	</body>
+</html>

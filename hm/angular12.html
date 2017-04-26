@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angularJS 包含</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<!--在 AngularJS 中，你可以在 HTML 中包含 HTML 文件。-->
+	<body ng-app="myApp" ng-controller="myContr">
+		<div ng-include="'angular11.html'"></div>
+	</body>
+	<script>
+		//包含的文件 "angular11.html" 中有 AngularJS 代码，它将被正常执行：
+		angular.module("myApp",[])
+		   .controller("myContr",function($scope){
+		   	    $scope.name = "Juddy";
+		   	    $scope.lastName = angular.lowercase($scope.name);
+		   	    $scope.big = angular.uppercase($scope.name);
+		   	    $scope.myShow = angular.isString($scope.name);
+		   	    $scope.num = angular.isNumber($scope.name);
+		   });
+	</script>
+</html>

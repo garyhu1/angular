@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angularJS 全局API</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<!--angular.lowercase()	      转换字符串为小写
+            angular.uppercase()	     转换字符串为大写
+            angular.isString()	     判断给定的对象是否为字符串，如果是返回 true。
+            angular.isNumber()    判断给定的对象是否为数字，如果是返回 true。-->
+        <div ng-app="myApp" ng-controller="myContr">
+        	<p>{{name}}</p>
+        	<p>转化为小写：{{lastName}}</p>
+        	<p>转化为大写：{{big}}</p>
+        	<p ng-show="myShow">是字符串</p>
+        	<p ng-show="num">是数字</p>
+        </div>    
+	</body>
+	<script>
+		angular.module("myApp",[])
+		   .controller("myContr",function($scope){
+		   	    $scope.name = "Juddy";
+		   	    $scope.lastName = angular.lowercase($scope.name);
+		   	    $scope.big = angular.uppercase($scope.name);
+		   	    $scope.myShow = angular.isString($scope.name);
+		   	    $scope.num = angular.isNumber($scope.name);
+		   });
+	</script>
+</html>

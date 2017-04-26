@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular指令</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="Con1">
+			<zl1></zl1><br />
+			{{name}}
+		</div>
+	</body>
+	<script type="text/javascript">
+		angular.module('myApp', []).directive('zl1', [function() {
+			return {
+				restrict: 'AE',
+				template: 'thirective',
+				link: function($scope, elm, attr, controller) {
+					console.log("这是link");
+				},
+				controller: function($scope, $element, $attrs) {
+					console.log("这是con");
+				}
+			};
+		}]).controller('Con1', ['$scope', function($scope) {
+			$scope.name = "aliceqqq";
+		}]);
+		
+		
+	</script>
+</html>

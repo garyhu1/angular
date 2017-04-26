@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular测试</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myContr" ng-init="testClick=false">
+			<button ng-disabled="testClick">点击</button><br />
+			<input type="checkbox" ng-model="testClick" />按钮
+			<p>{{testClick}}</p>
+			<p ng-show="true">我是可见的</p>
+			<p ng-show="false">我是不可见的</p>
+			<p ng-show="testClick">按钮不可以点击</p>
+			<p ng-show="h>10" ng-init="h=13">可见</p>
+			<p ng-hide="false">这样是可见的</p>
+			<p ng-hide="true">这样是不可见的</p>
+		</div>
+	</body>
+	<script>
+		var app = angular.module("myApp",[])
+		    .controller("myContr",function(){
+		    	
+		    });
+	</script>
+</html>

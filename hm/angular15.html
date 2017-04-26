@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AngularJS  依赖注入</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+      <h2>AngularJS 简单应用</h2>
+      
+      <div ng-app = "mainApp" ng-controller = "CalcController">
+         <p>输入一个数字: <input type = "number" ng-model = "number" /></p>
+         <button ng-click = "startCal()">X<sup>2</sup></button>
+         <p>结果: {{result}}</p>
+      </div>
+      
+      <script>
+         var mainApp = angular.module("mainApp", []);
+         
+         mainApp.value("myValue",13);
+         
+         mainApp.config(function($provide){
+         	$provide.provider("myProvide",function(){
+         		this.$get = function(){
+         			var factory = {};
+         			
+         			factory.cal = function(a,b){
+         				return a*b;
+         			}
+         			
+         			return factory;
+         		}
+         	})
+         });
+         
+         mainApp.factory("myFactory",function(){
+         	var factory = {};
+         	factory.cal = function(a,b){
+         		return a*b;
+         	}
+         	
+         	return factory;
+         });
+         
+         mainApp.service("myService",function(myFactory){
+         	 this.mul = function(a){
+         	 	return myFactory.cal(a,a);
+         	 }
+         });
+         
+         mainApp.controller("CalcController",function($scope,myService,myValue){
+         	$scope.number = myValue;
+         	$scope.result = myService.mul(myValue);
+         	
+         	$scope.startCal = function(){
+         		$scope.result = myService.mul($scope.number);
+         	}
+         });
+         
+			
+      </script>
+      
+   </body>
+</html>
+</html>

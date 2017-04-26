@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angularJS 动画</title>
+		<style type="text/css">
+			@keyframes myChange {
+				from {
+					height: 100px;
+				} to {
+					 height: 0;
+				}
+			}
+			div{
+				height: 100px;
+				background: forestgreen;
+			}
+			div.ng-hide{
+				animation: 0.5s myChange;
+			}
+		</style>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+	</head>
+	<body ng-app="myApp">
+		<p>隐藏DIV:<input type="checkbox" ng-model="myShow"></p>
+		<div ng-hide="myShow"></div>
+	</body>
+	<script>
+		var app = angular.module("myApp",['ngAnimate']);
+	</script>
+</html>

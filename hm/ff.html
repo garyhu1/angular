@@ -1,0 +1,3118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<!--[if IE 8]><html class="ie ie8 ltie9"><![endif]-->
+	<!--[if gte IE 9]><html class="ie ie9"><![endif]-->
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="keywords" content="邦购,潮牌衣服,潮牌服装,潮牌鞋子,潮牌包,潮牌配饰, banggo.com,有范,有范儿,有范APP">
+		<meta name="description" content="banggo.com 邦购网,年轻人的时尚有范购物平台，整合全球有生活态度的时尚有范品牌，包括 Cheap Monday、Converse、Fjallraven 北极狐、Nike 等时尚品牌的服装、鞋履、包袋……有范">
+		<meta name="author" content="www.banggo.com" />
+		<meta name="copyright" content="Copyright &copy;www.banggo.com 版权所有" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<link rel="dns-prefetch" href="http://img1.banggo.com" />
+		<link rel="dns-prefetch" href="http://img2.banggo.com" />
+		<link rel="dns-prefetch" href="http://img3.banggo.com" />
+		<link rel="dns-prefetch" href="http://img4.banggo.com" />
+		<link rel="dns-prefetch" href="http://pic1.banggo.com" />
+		<link rel="dns-prefetch" href="http://pic2.banggo.com" />
+		<link rel="dns-prefetch" href="http://pic3.banggo.com" />
+		<link rel="dns-prefetch" href="http://pic4.banggo.com" />
+		<link rel="dns-prefetch" href="http://s.banggo.com" />
+		<link rel="shortcut icon" href="http://s.banggo.com/pub1/bgweb/default/images/favicon.ico" type="image/x-icon">
+		<title>首页-banggo.com 邦购网 | 美特斯邦威官方商城-Me&amp;City官方商城，100%正品保证!</title>
+		<script>
+			window._ty_rum || function(t) {
+				function e(t) {
+					switch(typeof t) {
+						case "object":
+							if(!t) return "null";
+							if(t instanceof Array) {
+								for(var r = "[", n = 0; n < t.length; n++) r += (n > 0 ? "," : "") + e(t[n]);
+								return r + "]"
+							}
+							var r = "{",
+								n = 0;
+							for(var a in t)
+								if("function" != typeof t[a]) {
+									var i = e(t[a]);
+									r += (n > 0 ? "," : "") + e(a) + ":" + i, n++
+								}
+							return r + "}";
+						case "string":
+							return '"' + t.replace(/([\"\\])/g, "\\$1").replace(/\n/g, "\\n") + '"';
+						case "number":
+							return t.toString();
+						case "boolean":
+							return t ? "true" : "false";
+						case "function":
+							return e(t.toString());
+						case "undefined":
+						default:
+							return '"undefined"'
+					}
+				}
+
+				function r(t) {
+					return B ? B(t) : t
+				}
+
+				function n() {
+					return Date.now ? Date.now() : (new Date).valueOf()
+				}
+
+				function a(t, e, r) {
+					function n() {
+						var t = H.args.apply(this, arguments);
+						return e(i, t, r)
+					}
+					var a, i = t[t.length - 1];
+					if("function" == typeof i) {
+						switch(i.length) {
+							case 0:
+								a = function() {
+									return n.apply(this, arguments)
+								};
+								break;
+							case 1:
+								a = function(t) {
+									return n.apply(this, arguments)
+								};
+								break;
+							case 2:
+								a = function(t, e) {
+									return n.apply(this, arguments)
+								};
+								break;
+							case 3:
+								a = function(t, e, r) {
+									return n.apply(this, arguments)
+								};
+								break;
+							case 4:
+								a = function(t, e, r, a) {
+									return n.apply(this, arguments)
+								};
+								break;
+							case 5:
+								a = function(t, e, r, a, i) {
+									return n.apply(this, arguments)
+								};
+								break;
+							default:
+								for(var o = [], s = 0, u = i.length; u > s; s++) o.push("_" + s);
+								a = eval("(function(){return function(" + o.join(",") + "){var args = [].slice.call(arguments, 0);return e(i, args, r);};})();")
+						}
+						t[t.length - 1] = a
+					}
+					return t
+				}
+
+				function i(t, e) {
+					return t && e && (t.moduleName = e), t
+				}
+
+				function o(t, e, r) {
+					return function() {
+						try {
+							k = e, r && s(e), t.apply(this, arguments), r && u()
+						} catch(n) {
+							throw r && u(), i(n, e)
+						}
+					}
+				}
+
+				function s(e) {
+					H.each(["setTimeout", "setInterval"], function(r) {
+						H.wrap(!0, t, r, function(t) {
+							return function() {
+								var r, n = H.args.apply(this, arguments),
+									a = n[0];
+								return "function" == typeof a && (r = o(a, e, !0)), r && (n[0] = r), t.apply(this, n)
+							}
+						})
+					})
+				}
+
+				function u() {
+					H.each(["setTimeout", "setInterval"], function(e) {
+						H.unwrap(t, e)
+					})
+				}
+
+				function c(t) {
+					P && H.wrap(!1, P.prototype, "addEventListener", function(e) {
+						return function() {
+							var r, n = H.args.apply(this, arguments),
+								a = n[1];
+							return "function" == typeof a && (r = o(a, t, !0)), r && (n[1] = r), e.apply(this, n)
+						}
+					}), s(t)
+				}
+
+				function f() {
+					P && H.unwrap(P.prototype, "addEventListener"), u()
+				}
+
+				function p(t) {
+					return function(t, e) {}
+				}
+
+				function l() {
+					if(this.errors.length) {
+						var t = function(t) {
+								var e = [],
+									r = {};
+								H.each(t, function(t) {
+									var e = _(t[1], t[2], t[3], t[6]);
+									r[e] ? r[e][4] += 1 : r[e] = [t[1], t[2], t[3], "#" == t[4] ? R.URL : t[4], 1, t[5], t[6], t[7]]
+								});
+								for(var n in r) e.push(r[n]);
+								return e
+							}(this.errors),
+							e = this;
+						H.POST(H.mkurl(A.server.beacon, "err", {
+							fu: C ? C : C++,
+							os: parseInt((n() - (N || A.st)) / 1e3)
+						}), H.stringify({
+							datas: t
+						}), {}, function(t, r) {
+							t || (e.errors = [])
+						})
+					}
+				}
+
+				function d() {
+					X.initend()
+				}
+
+				function h() {
+					"complete" === R.readyState && X.initend()
+				}
+
+				function m(t) {
+					function e() {
+						X.send()
+					}
+					return A.load_time ? !0 : (X.initend(), A.load_time = n(), void(9 === t ? e() : setTimeout(e, 0)))
+				}
+
+				function y() {
+					F || m(9), H.bind(l, X)(), F = 1
+				}
+
+				function v() {
+					X.touch || (X.touch = n())
+				}
+
+				function g(t) {
+					if(t[6]) {
+						var e = t[4],
+							r = t[5];
+						if(r && "string" == typeof r && e) {
+							r = r.split(/\n/);
+							var n = O.exec(r[0]);
+							n || (n = O.exec(r[1])), n && n[1] != e && (t[4] = n[1] || e, t[2] = n[2] || t[2], t[3] = n[3] || t[3])
+						}
+					}
+				}
+
+				function _(t, e, r, n) {
+					return t + e + r + (n ? n : "")
+				}
+
+				function w(e) {
+					var r = arguments,
+						a = "unknown",
+						i = [n()];
+					if(0 != r.length) {
+						if("string" == typeof e) {
+							var o = r.length < 4 ? r.length : 4;
+							i[1] = r[0], o > 2 && (i[2] = r[2], i[3] = 0, i[4] = r[1]), o > 3 && r[3] && (i[3] = r[3])
+						} else if(e instanceof Event || t.ErrorEvent && e instanceof ErrorEvent) {
+							if(i[1] = e.message || (e.error && e.error.constructor.name) + (e.error && e.error.message) || "", i[2] = e.lineno ? e.lineno : 0, i[3] = e.colno ? e.colno : 0, i[4] = e.filename || e.error && e.error.fileName || e.target && e.target.baseURI || "", i[4] == R.URL && (i[4] = "#"), e.error) {
+								i[5] = e.error.stack, i[6] = e.error.moduleName;
+								var s = _(i[1], i[2], i[3], i[6]);
+								i[7] = j[s] ? 0 : 1, j[s] = !0
+							} else i[5] = null, i[6] = null, i[7] = 0;
+							if(i[1] === a && i[4] === a) return;
+							g(i)
+						}
+						X.errors.push(i)
+					}
+				}
+
+				function S(t, e, r) {
+					for(var n = "o." + e + "(", a = 0; a < r.length; a++) n += (a > 0 ? "," : "") + "a[" + a + "]";
+					return n += ");", new Function(n)()
+				}
+
+				function T(t) {
+					return function() {
+						var e = arguments;
+						if(!this._ty_wrap) {
+							var r = H.args.apply(this, e);
+							this._ty_rum = {
+								method: r[0],
+								url: r[1],
+								start: n()
+							}
+						}
+						try {
+							return t.apply(this, e)
+						} catch(a) {
+							return this.open = t, S(this, "open", e)
+						}
+					}
+				}
+
+				function b(e) {
+					return "string" == typeof e ? e.length : t.ArrayBuffer && e instanceof ArrayBuffer ? e.byteLength : t.Blob && e instanceof Blob ? e.size : e && e.length ? e.length : 0
+				}
+
+				function E(e) {
+					return function() {
+						function r(t) {
+							var e, r, a = l._ty_rum;
+							if(a) {
+								if(4 !== a.readyState && (a.end = n()), a.s = l.status, "" == l.responseType || "text" == l.responseType) a.res = b(l.responseText);
+								else if(l.response) a.res = b(l.response);
+								else try {
+									a.res = b(l.responseText)
+								} catch(i) {
+									a.res = 0
+								}
+								if(a.readyState = l.readyState, a.cb_time = d, e = [a.method + " " + a.url, a.s > 0 ? a.end - a.start : 0, d, a.s, a.s > 0 ? 0 : t, a.res, a.req], a.r && (r = o(l), r && (r = r.xData) && (e.push(r.id), e.push(r.action), e.push(r.time && r.time.duration), e.push(r.time && r.time.qu))), A.aa.push(e), A.server.custom_urls && A.server.custom_urls.length && !X.ct) {
+									if(!A.pattern) {
+										A.pattern = [];
+										for(var s = 0; s < A.server.custom_urls.length; s++) A.pattern.push(new RegExp(A.server.custom_urls[s]))
+									}
+									for(var s = 0; s < A.pattern.length; s++)
+										if(a.url.match(A.pattern[s])) {
+											X.ct = a.end + d;
+											break
+										}
+								}
+								X.sa(), l._ty_rum = null
+							}
+						}
+
+						function a() {
+							4 == l.readyState && r(0)
+						}
+
+						function o(e) {
+							var r;
+							if(e.getResponseHeader) {
+								var n = H.parseJSON(e.getResponseHeader("X-Tingyun-Tx-Data"));
+								n && n.r && e._ty_rum && n.r + "" == e._ty_rum.r + "" && (r = {
+									name: e._ty_rum.url,
+									xData: n
+								}, U && t._ty_rum.c_ra.push(r))
+							}
+							return r
+						}
+
+						function c(t) {
+							return function() {
+								var e, r;
+								4 == l.readyState && l._ty_rum && (l._ty_rum.end = e = n(), l._ty_rum.readyState = 4);
+								try {
+									k && s(k), r = t.apply(this, arguments), k && u()
+								} catch(o) {
+									throw o = i(o, k), k && u(), k = null, o
+								}
+								return 4 == l.readyState && (d = n() - e), a(), r
+							}
+						}
+
+						function f(t) {
+							return function() {
+								var e = l._ty_rum;
+								return e ? "progress" == t ? !0 : ("abort" == t ? r(905) : "loadstart" == t ? e.start = n() : "error" == t ? r(990) : "timeout" == t && r(903), !0) : !0
+							}
+						}
+
+						function p(t, e) {
+							e instanceof Array || (e = [e]);
+							for(var r = 0; r < e.length; r++) {
+								var n = e[r];
+								H.sh(t, n, f(n), !1)
+							}
+						}
+						if(!this._ty_wrap) {
+							this._ty_rum.start = n(), this._ty_rum.req = arguments[0] ? b(arguments[0]) : 0;
+							var l = this,
+								d = 0,
+								h = H.wrap(!1, this, "onreadystatechange", c);
+							h || H.sh(this, "readystatechange", a, !1), p(this, ["error", "progress", "abort", "load", "loadstart", "loadend", "timeout"]), h || setTimeout(function() {
+								H.wrap(!1, l, "onreadystatechange", c)
+							}, 0)
+						}
+						var m = function() {
+								function t(t) {
+									var e = {},
+										r = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?/.exec(t);
+									return r && (e.protocol = r[1] ? r[1] + ":" : "http:", e.hostname = r[3], e.port = r[4] || ""), e
+								}
+								return function(e) {
+									var r = location;
+									if(e = H.trim(e)) {
+										if(e = e.toLowerCase(), e.startsWith("//") && (e = r.protocol + e), !e.startsWith("http")) return !0;
+										var n = t(e),
+											a = n.protocol === r.protocol && n.hostname === r.hostname;
+										return a && (a = n.port === r.port ? !0 : !r.port && ("http:" === r.protocol && "80" === n.port || "https:" === r.protocol && "443" === n.port)), a
+									}
+									return !1
+								}
+							}(),
+							y = arguments;
+						try {
+							try {
+								var v = A.server;
+								v && v.id && this._ty_rum && m(this._ty_rum.url) && (this._ty_rum.r = (new Date).getTime() % 1e8, this.setRequestHeader && this.setRequestHeader("X-Tingyun-Id", v.id + ";r=" + this._ty_rum.r))
+							} catch(g) {}
+							return e.apply(this, y)
+						} catch(g) {
+							return this.send = e, S(this, "send", y)
+						}
+					}
+				}
+				var k, x = t.XMLHttpRequest,
+					R = document,
+					L = Object.defineProperty,
+					q = t.define,
+					P = t.EventTarget,
+					C = 0,
+					O = new RegExp("([a-z]+:/{2,3}.*):(\\d+):(\\d+)"),
+					B = t.encodeURIComponent,
+					N = null,
+					A = t._ty_rum = {
+						st: n(),
+						ra: [],
+						c_ra: [],
+						aa: [],
+						snd_du: function() {
+							return this.server.adu ? 1e3 * this.server.adu : 1e4
+						},
+						cc: function() {
+							return this.server.ac ? this.server.ac : 10
+						}
+					};
+				var ty_rum = A;
+				ty_rum.server = {
+					beacon: "10.100.26.181:18088",
+					beacon_err: "10.100.26.181:18088",
+					key: "xoQp58Chn_A",
+					trace_threshold: 7000,
+					id: "p35OnrDoP8k"
+				};
+				if(A.server && !(A.server.sr && Math.random() >= A.server.sr)) {
+					var D = String.prototype.trim;
+					String.prototype.startsWith || (String.prototype.startsWith = function(t, e) {
+						return e = e || 0, this.indexOf(t, e) === e
+					});
+					var I = /^http/i,
+						M = function() {
+							function t() {
+								return(65536 * (1 + Math.random()) | 0).toString(16).substring(1)
+							}
+							return t() + "-" + t() + t()
+						}(),
+						H = {
+							wrap: function(t, e, r, n, a) {
+								try {
+									var i = e[r]
+								} catch(o) {
+									if(!t) return !1
+								}
+								if(!i && !t) return !1;
+								if(i && i._ty_wrap) return !1;
+								try {
+									e[r] = n(i, a)
+								} catch(o) {
+									return !1
+								}
+								return e[r]._ty_wrap = [i], !0
+							},
+							unwrap: function(t, e) {
+								try {
+									var r = t[e]._ty_wrap;
+									r && (t[e] = r[0])
+								} catch(n) {}
+							},
+							each: function(t, e) {
+								if(t) {
+									var r;
+									for(r = 0; r < t.length && (!t[r] || !e(t[r], r, t)); r += 1);
+								}
+							},
+							mkurl: function(t, e) {
+								var a = arguments,
+									i = /^https/i.test(R.URL) ? "https" : "http";
+								if(i = i + "://" + t + "/" + e + "?av=1.0.0&v=1.3.2&key=" + r(A.server.key) + "&ref=" + r(R.URL) + "&rand=" + n() + "&pvid=" + M, "pf" !== e && A && A.agent && A.agent.n && (i += "&n=" + r(A.agent.n)), a.length > 2) {
+									var o = a[2];
+									for(var s in o) i += "&" + s + "=" + o[s]
+								}
+								return i
+							},
+							GET: function(t, e) {
+								function r() {
+									e && e.apply(this, arguments), n.parentNode && n.parentNode.removeChild(n)
+								}
+								if(navigator && navigator.sendBeacon && I.test(t)) return navigator.sendBeacon(t, null);
+								var n = R.createElement("img");
+								return n.setAttribute("src", t), n.setAttribute("style", "display:none"), this.sh(n, "readystatechange", function() {
+									("loaded" == n.readyState || 4 == n.readyState) && r("loaded")
+								}, !1), this.sh(n, "load", function() {
+									return r("load"), !0
+								}, !1), this.sh(n, "error", function() {
+									return r("error"), !0
+								}, !1), R.body.appendChild(n)
+							},
+							fpt: function(t, e, r) {
+								function n(t, e, r) {
+									var n = R.createElement(t);
+									try {
+										for(var a in e) n[a] = e[a]
+									} catch(i) {
+										var o = "<" + t;
+										for(var a in e) o += " " + a + '="' + e[a] + '"';
+										o += ">", r || (o += "</" + t + ">"), n = R.createElement(o)
+									}
+									return n
+								}
+								var a = n("div", {
+										style: "display:none"
+									}, !1),
+									i = n("iframe", {
+										name: "_ty_rum_frm",
+										width: 0,
+										height: 0,
+										style: "display:none"
+									}, !1),
+									o = n("form", {
+										style: "display:none",
+										action: t,
+										enctype: "application/x-www-form-urlencoded",
+										method: "post",
+										target: "_ty_rum_frm"
+									}, !1),
+									s = n("input", {
+										name: "data",
+										type: "hidden"
+									}, !0);
+								return s.value = e, o.appendChild(s), a.appendChild(i), a.appendChild(o), R.body.appendChild(a), o.submit(), i.onreadystatechange = function() {
+									("complete" === i.readyState || 4 === i.readyState) && (r(null, i.innerHTML), R.body.removeChild(a))
+								}, !0
+							},
+							POST: function(e, r, n, a) {
+								if(this.ie) return this.fpt(e, r, a);
+								if(navigator && navigator.sendBeacon && I.test(e)) {
+									var i = navigator.sendBeacon(e, r);
+									return a(!i), i
+								}
+								var o;
+								if(t.XDomainRequest) return o = new XDomainRequest, o.open("POST", e), o.onload = function() {
+									a(null, o.responseText)
+								}, this.sh(o, "load", function() {
+									a(null, o.responseText)
+								}, !1), this.sh(o, "error", function() {
+									a("POST(" + e + ")error")
+								}, !1), this.wrap(!0, o, "onerror", function(t) {
+									return function() {
+										return a && a("post error", o.responseText), !0
+									}
+								}), o.send(r), !0;
+								if(!x) return !1;
+								o = new x, o.overrideMimeType && o.overrideMimeType("text/html");
+								try {
+									o._ty_wrap = 1
+								} catch(s) {}
+								var u = 0;
+								o.onreadystatechange = function() {
+									4 == o.readyState && 200 == o.status && (0 == u && a(null, o.responseText), u++)
+								}, o.onerror && this.wrap(!0, o, "onerror", function(t) {
+									return function() {
+										return a("post error", o.responseText), "function" == typeof t ? t.apply(this, arguments) : !0
+									}
+								});
+								try {
+									o.open("POST", e, !0)
+								} catch(s) {
+									return this.fpt(e, r, a)
+								}
+								for(var c in n) o.setRequestHeader(c, n[c]);
+								return o.send(r), !0
+							},
+							sh: function(t, e, r, n) {
+								return t.addEventListener ? t.addEventListener(e, r, n) : t.attachEvent ? t.attachEvent("on" + e, r) : !1
+							},
+							args: function() {
+								for(var t = [], e = 0; e < arguments.length; e++) t.push(arguments[e]);
+								return t
+							},
+							stringify: e,
+							parseJSON: function(e) {
+								if(e && "string" == typeof e) {
+									var r = t.JSON ? t.JSON.parse : function(t) {
+										return new Function("return " + t)()
+									};
+									return r(e)
+								}
+								return null
+							},
+							trim: D ? function(t) {
+								return null == t ? "" : D.call(t)
+							} : function(t) {
+								return null == t ? "" : t.toString().replace(/^\s+/, "").replace(/\s+$/, "")
+							},
+							extend: function(t, e) {
+								if(t && e)
+									for(var r in e) e.hasOwnProperty(r) && (t[r] = e[r]);
+								return t
+							},
+							bind: function(t, e) {
+								return function() {
+									t.apply(e, arguments)
+								}
+							}
+						};
+					try {
+						L && L(t, "define", {
+							get: function() {
+								return q
+							},
+							set: function(t) {
+								"function" == typeof t && (t.amd || t.cmd) ? (q = function() {
+									var e = H.args.apply(this, arguments);
+									if(3 !== e.length) return t.apply(this, e);
+									var r = "string" == typeof e[0] ? e[0] : "anonymous";
+									return t.apply(this, a(e, function(t, e, r) {
+										var n;
+										try {
+											k = r, c(r), n = t.apply(this, e), f()
+										} catch(a) {
+											throw f(), i(a, r)
+										}
+										return n
+									}, r))
+								}, H.extend(q, t)) : q = t
+							},
+							configurable: !0
+						})
+					} catch($) {}
+					var U = t.performance ? t.performance : t.Performance;
+					U && (H.sh(U, "resourcetimingbufferfull", function() {
+						var t = U.getEntriesByType("resource");
+						t && (A.ra = A.ra.concat(t), U.clearResourceTimings())
+					}, !1), H.sh(U, "webkitresourcetimingbufferfull", function() {
+						var t = U.getEntriesByType("resource");
+						t && (A.ra = A.ra.concat(t), U.webkitClearResourceTimings())
+					}, !1));
+					for(var X = A.metric = {
+							ready: function() {
+								return A.load_time
+							},
+							initend: function() {
+								function t() {
+									X.sa()
+								}
+								A.end_time || (A.end_time = n(), this._h = setInterval(t, 2e3))
+							},
+							send: function() {
+								function e() {
+									function e(t) {
+										return a[t] > 0 ? a[t] - o : 0
+									}
+									var n = {};
+									if(U && U.timing) {
+										var a = U.timing;
+										o = a.navigationStart;
+										var i = e("domainLookupStart"),
+											s = e("domainLookupEnd"),
+											u = e("redirectStart"),
+											c = e("redirectEnd"),
+											f = e("connectStart"),
+											p = e("connectEnd");
+										n = {
+											f: e("fetchStart"),
+											qs: e("requestStart"),
+											rs: e("responseStart"),
+											re: e("responseEnd"),
+											os: e("domContentLoadedEventStart"),
+											oe: e("domContentLoadedEventEnd"),
+											oi: e("domInteractive"),
+											oc: e("domComplete"),
+											ls: e("loadEventStart"),
+											le: e("loadEventEnd")
+										}, p - f > 0 && (n.cs = f, n.ce = p), s - i > 0 && (n.ds = i, n.de = s), (c - u > 0 || c > 0) && (n.es = u, n.ee = c), 0 == n.le && (n.ue = A.load_time - o);
+										var l;
+										if(a.msFirstPaint) l = a.msFirstPaint;
+										else if(t.chrome && chrome.loadTimes) {
+											var d = chrome.loadTimes();
+											d && d.firstPaintTime && (l = 1e3 * d.firstPaintTime)
+										} else A.firstPaint && (l = A.firstPaint);
+										l && (n.fp = Math.round(l - o)), a.secureConnectionStart && (n.sl = e("secureConnectionStart"))
+									} else n = {
+										t: o,
+										os: A.end_time - o,
+										ls: A.load_time - o
+									};
+									n.je = X.errors.length, X.ct && (n.ct = X.ct - o), X.touch && (n.fi = X.touch - o);
+									var h = A.agent;
+									return h && (n.id = r(h.id), n.a = h.a, n.q = h.q, n.tid = r(h.tid), n.n = r(h.n)), n.sh = t.screen && t.screen.height, n.sw = t.screen && t.screen.width, n
+								}
+
+								function a(e) {
+									var r = t._ty_rum.c_ra;
+									if(e)
+										for(var n = r.length - 1; n >= 0; n--)
+											if(e.indexOf(r[n].name) > -1) return r[n].xData;
+									return null
+								}
+
+								function i(t) {
+									function e(t) {
+										return f[t] > 0 ? f[t] : 0
+									}
+									if(t < A.server.trace_threshold) return null;
+									var n = U;
+									if(n && n.getEntriesByType) {
+										var i = {
+												tr: !0,
+												tt: r(R.title),
+												charset: R.characterSet
+											},
+											s = A.ra,
+											u = n.getEntriesByType("resource");
+										u && (s = s.concat(u), n.webkitClearResourceTimings && n.webkitClearResourceTimings(), n.clearResourceTimings && n.clearResourceTimings()), i.res = [];
+										for(var c = 0; c < s.length; c++) {
+											var f = s[c],
+												p = {
+													o: e("startTime"),
+													rt: f.initiatorType,
+													n: f.name,
+													f: e("fetchStart"),
+													ds: e("domainLookupStart"),
+													de: e("domainLookupEnd"),
+													cs: e("connectStart"),
+													ce: e("connectEnd"),
+													sl: e("secureConnectionStart"),
+													qs: e("requestStart"),
+													rs: e("responseStart"),
+													re: e("responseEnd")
+												},
+												l = a(f.name);
+											l && (p.aid = l.id, p.atd = l.trId, p.an = l.action, p.aq = l.time && l.time.qu, p.as = l.time && l.time.duration), i.res.push(p)
+										}
+										if(X.errors.length) {
+											i.err = [];
+											for(var c = 0, d = X.errors, h = d.length; h > c; c++) i.err.push({
+												o: Math.round(d[c][0] - o),
+												e: d[c][1],
+												l: d[c][2],
+												c: d[c][3],
+												r: d[c][4],
+												ec: h,
+												s: d[c][5],
+												m: d[c][6],
+												ep: d[c][7]
+											})
+										}
+										return i
+									}
+									return null
+								}
+								if(this.sended) return !1;
+								if(!this.ready()) return !1;
+								var o = A.st,
+									s = {};
+								try {
+									pf = e(), s = i(pf.ls > 0 ? pf.ls : A.load_time - o)
+								} catch(u) {}
+								s = s ? H.stringify(s) : "";
+								var c = H.mkurl(A.server.beacon, "pf", pf);
+								N = n(), 0 != s.length && H.POST(c, s, {}, p("POST")) || H.GET(c);
+								var f = H.bind(l, this);
+								return f(), setInterval(f, 1e4), this.sended = !0, this.sa(1), !0
+							},
+							sa: function(t) {
+								(this.ready() || t) && (t || (t = !this._last_send || n() - this._last_send > A.snd_du() || A.aa.length >= A.cc()), A.aa.length > 0 && t && (this._last_send = n(), H.POST(H.mkurl(A.server.beacon, "xhr"), H.stringify({
+									xhr: A.aa
+								}), {}, p("POST")), A.aa = []))
+							},
+							errors: []
+						}, F = null, j = {}, z = [
+							["load", m],
+							["beforeunload", y],
+							["pagehide", y],
+							["unload", y]
+						], J = 0; J < z.length; J++) H.sh(t, z[J][0], z[J][1], !1);
+					t.addEventListener ? H.sh(t, "error", w, !1) : t.onerror = function(t, e, r, n, a) {
+						var i = [t, r, n, e == R.URL ? "#" : e];
+						if(a) {
+							var o = _(t, r, n, a.moduleName);
+							i = i.concat([1, a.stack, a.moduleName, j[o] ? 0 : 1]), j[o] = !0
+						}
+						g(i), X.errors.push(i)
+					};
+					for(var W = [
+							["scroll", v],
+							["keypress", v],
+							["click", v],
+							["DOMContentLoaded", d],
+							["readystatechange", h]
+						], J = 0; J < W.length; J++) H.sh(R, W[J][0], W[J][1], !1);
+					if(H.wrap(!1, t, "requestAnimationFrame", function(e) {
+							return function() {
+								return A.firstPaint = n(), t.requestAnimationFrame = e, e.apply(this, arguments)
+							}
+						}), x)
+						if(x.prototype) H.wrap(!1, x.prototype, "open", T), H.wrap(!1, x.prototype, "send", E);
+						else {
+							H.ie = 7;
+							var G = x;
+							t.XMLHttpRequest = function() {
+								var t = new G;
+								return H.wrap(!1, t, "open", T), H.wrap(!1, t, "send", E), t
+							}
+						}
+					else t.ActiveXObject && (H.ie = 6);
+				}
+				ty_rum.agent = {
+					id: 'bOlCZlNFNSA#svB-GMpYmCk',
+					n: 'WebAction/PHP/opt%2Fcase%2Fbanggo%2Findex.php',
+					tid: '73fbf136e29f25',
+					q: 0,
+					a: 63
+				};
+			}(window);
+		</script>
+		<script type="text/javascript">
+			window.console = window.console || (function() {
+				var c = {};
+				c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function() {};
+				return c;
+			})();
+		</script>
+		<script>
+			var appName = "bgweb";
+
+			function consts(v) {
+				if(typeof(v) == 'undefined') {
+					return "http://www.banggo.com";
+				}
+				var cons = {
+					source: "http://img1.banggo.com",
+					index: "http://www.banggo.com",
+					m: "http://m.banggo.com",
+					user: "http://my.banggo.com",
+					member: "http://user.banggo.com",
+					mbmember: "http://my.banggo.com",
+					muser: "http://muser.banggo.com",
+					oldact: "http://act.banggo.com",
+					mbact: "http://mbact.banggo.com",
+					act: "http://bgact.banggo.com",
+					mact: "http://mact.banggo.com",
+					search: "http://search.banggo.com",
+					msearch: "http://m.banggo.com",
+					ploy: "http://ploy.banggo.com",
+					mploy: "http://mploy.banggo.com",
+					point: "http://point.banggo.com",
+					api: "http://test.banggo.com",
+					qipa: "http://qipa.banggo.com",
+					funwear: "http://funwear.banggo.com",
+					topic: "http://topic.banggo.com",
+					www: "http://www.banggo.com",
+					activity: "http://activity.banggo.com",
+					mactivity: "http://mactivity.banggo.com",
+					metersbonwe: "http://metersbonwe.banggo.com",
+					mecity: "http://mecity.banggo.com",
+					moomoo: "http://moomoo.banggo.com",
+					kids: "http://kids.banggo.com",
+					chin: "http://chin.banggo.com"
+				};
+				return cons[v]
+			}
+			var __public__ = "http://s.banggo.com/pub1/";
+			var baseImgUrl = "http://pic1.banggo.com";
+			var searchlen = "12";
+			var return_url = "http%3A%2F%2Fwww.banggo.com%2F";
+		</script>
+		<!-- 百度统计异步加载 开始 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "//hm.baidu.com/hm.js?0600094e16cec594db18b43c878d459f";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<!-- 百度统计异步加载 结束 -->
+		<link href="http://s.banggo.com/pub1/??/publish/bgweb/index/css/index.55456a40.css,/publish/bgweb/default/css/global.00bcc767.css,/publish/bgweb/default/css/top.9ce1f51d.css,/publish/bgweb/default/css/gridComm.33972504.css,/publish/bgweb/default/css/new.8587bd20.css,/publish/bgweb/default/css/ie6hack.c08a300d.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<script src="http://s.banggo.com/pub1/??/bgweb/public/js/jquery-1.8.3.min.js?v=201703071654,/bgweb/public/js/jquery.lazyload.js?v=201703071654,/bgweb/public/js/juicer-min.js?v=201703071654,/publish/bgweb/default/js/plate.9350dc0a.js,/publish/bgweb/default/js/layout.47c70735.js,/publish/bgweb/default/js/helper.f86e6d38.js,/publish/bgweb/default/js/a.d39cc6c9.js,/publish/bgweb/default/js/animate.5c21f01a.js,/publish/bgweb/default/js/search.9455825f.js,/publish/bgweb/default/js/statistics.a4fffafb.js,/bgweb/public/js/effect/mbshop_nav.js?v=201703071654,/bgweb/public/js/effect/mbshop_ie6hack.js?v=201703071654,/bgweb/public/js/effect/mbshop_pop.js?v=201703071654,/bgweb/public/js/effect/mbshop_function.js?v=201703071654,/bgcom/common/js/config.js?v=201703071654"></script>
+		<script type="text/javascript">
+			var timestamp = "1491790245"
+		</script>
+		<script type='text/javascript' src='http://www.banggo.com/dvert/getDvertInfo?siteMark=index&ts=1491790245'></script>
+
+		<!-- 品牌tabs页 -->
+		<!-- $this->renderFile('@bgweb/views/layouts/brandTopTab.php',array('adMark'=>'www')); -->
+		<!-- head adv -->
+		<div class="getActId" id="ad_common_top_picture">
+		</div>
+		<script>
+			adShow('common_top_picture');
+		</script>
+		<!-- web start -->
+		<div class="mbshop_new_headtopline_wrap">
+			<!-- top line -->
+			<div class="mbshop_new_headtopline">
+				<p class="mbshop_new_headtopleft" id="ad_common_top_title"></p>
+				<script>
+					adShow('common_top_title')
+				</script>
+				<div class="mbshop_new_headtopright">
+					<div class="mbshop_new_headtop_content headerLogin">
+						<a class="mbshop_new_headtop_menu" href="http://bgact.banggo.com/login?r_url=http%3A%2F%2Fwww.banggo.com%2F">登录<em></em></a>
+						<div class="mbshop_new_headtop_box">
+							<a href="http://bgact.banggo.com/Unionlogin/Authorize?from=qq">QQ账户登录</a>
+							<!--<a href="">微博账户登录</a>
+					<a href="">人人账户登录</a>-->
+							<a href="http://bgact.banggo.com/Unionlogin/Authorize?from=alipay">支付宝登录</a>
+							<a href="http://m.banggo.com/Api/wxLogin">微信账户登录</a>
+						</div>
+					</div>
+					<!-- <span>|</span> -->
+					<div class="mbshop_new_headtop_content headtopReg">
+						<a class="mbshop_new_headtop_style01" href="https://passport.banggo.com/CASServer/custom/registryPage.do?service=http://bgact.banggo.com//Login/Reg">注册</a>
+					</div>
+					<!-- <span>|</span> -->
+					<div class="mbshop_new_headtop_content headtopOrder">
+						<a class="mbshop_new_headtop_menu mbshop_new_headtop_text_style_01" href="http://user.banggo.com">我的邦购<em></em></a>
+						<div class="mbshop_new_headtop_box mbshop_new_headtop_con_style_01">
+							<a href="http://user.banggo.com/member/Order">我的订单</a>
+							<a href="http://user.banggo.com/member/Point">我的积分</a>
+							<a href="http://user.banggo.com/member/Collect">我的点赞</a>
+							<a href="http://user.banggo.com/member/Address">收货地址</a>
+						</div>
+					</div>
+					<div class="mbshop_new_headtop_content">
+						<a style="width:60px" class="new_mbshop_xlwb" href="http://www.banggo.com/theme/hyzx.shtml" target="_blank">会员中心</a>
+					</div>
+					<!-- <span>|</span> -->
+					<div class="mbshop_new_headtop_content">
+						<a href="http://www.banggo.com/Index/app" title="" target="_blank" class="mbshop_new_headtop_menu mbshop_new_headtop_text_style_01" style="background-position:74px -35px !important;">
+							<b style="width:9px;height:10px;background:url('http://s.banggo.com/pub7/images/mbshop/common/Iphone-vertical.png') 0 0 no-repeat;padding-right:12px;"></b> 下载APP
+							<em style="width:90px"></em></a>
+						<div class="mbshop_new_headtop_box mbshop_new_headtop_con_style_02">
+							<img alt="扫描邦购手机二维码" src="http://s.banggo.com/pub1/bgweb/default/images/grey.gif" data-original="http://s.banggo.com/pub1/bgweb/default/images/mbshop_pic_mobile.png" width="140" height="140" />
+						</div>
+					</div>
+					<!-- <span>|</span> -->
+					<div class="mbshop_new_headtop_content">
+						<a href="http://weibo.com/gobanggo" target="_blank" title="新浪微博" class="new_mbshop_xlwb">微博</a>
+						<a title="" class="new_mbshop_wxewm">微信
+							<div class="new_mbshop_wxewm_box">
+								<img src="http://s.banggo.com/pub1/bgweb/default/images/grey.gif" data-original="http://s.banggo.com/pub1/bgweb/default/images/mbshop_pic_erweima.jpg" width="140" height="140" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- top content -->
+		<div class="mbshop_top_content_wrap">
+			<div class="mbshop_new_headtop">
+				<!-- logo -->
+				<div class="mbshop_new_headtop_fl" id="ad_common_logo">
+				</div>
+				<!-- search -->
+				<div class="mbshop_new_headtop_mid">
+					<!-- publicSearch -->
+					<div class="mbshop_searchHeader" id="search_top">
+						<form target="_self" action="" method="get" name="quicksearch">
+							<div class="mbshop_searchContent">
+								<div class="mbshop_searchLeft">
+									<label for="input_textbox" id='ad_quick_search'>
+									<input name="word" type="text" value="" class="mbshop_inputText" id="input_textbox" autocomplete="off" maxlength="70" />
+									<input type="submit" class="mbshop_iconSearch" title="搜索" value="搜索"/>
+									<i class="iconfont">&#xe601;</i>
+								</label>
+								</div>
+								<div class="mbshop_searchDropdown">
+								</div>
+							</div>
+						</form>
+						<input id="saveWord" name="saveWord" type='hidden' value="">
+						<!-- 热门搜索 -->
+					</div>
+					<div class="mbshop_hotSearchKey" id="ad_head_top">
+					</div>
+				</div>
+				<!-- cart -->
+				<div class="mbshop_new_headtop_fr">
+					<!-- cartBag -->
+					<div class="mbshop_new_topCartBag">
+						<a href="http://bgact.banggo.com/cart/index">购物袋 <b name="redbag_num">0</b> 件</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style type="text/css">
+			.mbshop_new_headtopline_wrap {
+				width: 100%;
+				height: 32px;
+				border-bottom: 1px solid #dcdcdc;
+				float: none;
+			}
+			
+			.mbshop_new_headtopline {
+				padding-bottom: 2px;
+			}
+			
+			.mbshop_new_headtopleft {
+				float: left;
+				color: #999;
+				font-size: 12px;
+				font-weight: normal;
+				line-height: 32px;
+			}
+			
+			.mbshop_new_headtop_menu em {
+				height: 3px;
+				bottom: -3px;
+			}
+			
+			.mbshop_new_headtop_menu,
+			.mbshop_new_headtop_style01,
+			.new_mbshop_xlwb,
+			.new_mbshop_wxewm {
+				color: #999;
+			}
+			
+			.new_mbshop_xlwb,
+			.new_mbshop_wxewm {
+				width: 24px;
+				background: none;
+			}
+			
+			.new_mbshop_wxewm_box {
+				top: 5px;
+			}
+		</style>
+
+		<style type="text/css">
+			.mbshop_new_headtop {
+				padding-top: 5px;
+			}
+			
+			.mbshop_new_headtop_fl {
+				width: 260px;
+				margin-top: 5px;
+			}
+			
+			.mbshop_new_headtop_mid {
+				width: 750px;
+				padding-top: 7px;
+			}
+			
+			.mbshop_searchHeader {
+				width: 378px;
+				margin-top: 12px;
+			}
+			
+			.mbshop_searchContent .mbshop_searchLeft {
+				position: relative;
+				border: 1px #d51819 solid;
+			}
+			
+			.mbshop_searchContent .mbshop_searchLeft .mbshop_inputText {
+				width: 285px;
+			}
+			
+			.mbshop_searchContent .mbshop_searchLeft .mbshop_iconSearch {
+				padding: 0 12px;
+				margin: 0;
+				width: 80px;
+				height: 32px;
+				line-height: 32px;
+				text-align: right;
+				font-family: "微软雅黑", "宋体", "verdana";
+				font-size: 14px;
+				color: #fff;
+				background: #d51819;
+			}
+			
+			.mbshop_searchContent .mbshop_searchLeft .iconfont {
+				position: absolute;
+				right: 48px;
+				top: 6px;
+				color: #fff;
+				cursor: pointer;
+			}
+			
+			.mbshop_hotSearchKey {
+				float: right;
+				width: 350px;
+				margin-top: 20px;
+			}
+			
+			.veo_brand_mb_warp {
+				width: 100%;
+				height: auto;
+				background: #efece8;
+				position: relative;
+			}
+			
+			.click_to_show {
+				width: 40px;
+				height: 15px;
+				position: absolute;
+				bottom: -15px;
+				left: 50%;
+				margin-left: -20px;
+				cursor: pointer;
+			}
+			
+			.give_height {
+				height: 60px !important;
+			}
+			
+			.veo_brand_mb {
+				width: 1200px;
+				height: 0;
+				overflow: hidden;
+				margin: 0 auto;
+				float: none;
+				transition: all 0.5s linear 0s;
+				background: #efece8;
+			}
+			
+			.veo_brand_mb_p {
+				width: auto;
+				height: auto;
+				overflow: hidden;
+				background: #fff;
+				margin-left: 200px;
+			}
+			
+			.veo_brand_mb a {
+				width: 80px;
+				height: 60px;
+				float: left;
+				background: #efece8;
+				margin-left: 3px;
+			}
+			
+			.veo_brand_mb a:last-child {
+				margin-right: 3px;
+			}
+			
+			.veo_brand_mb a.veo_b_w {
+				background: #fff;
+			}
+		</style>
+		<script type="text/javascript">
+			//顶部菜单动画效果
+			var CAS_SERVER = "https://passport.banggo.com";
+			var searchUrl = "http://search.banggo.com/search/a_a.shtml"
+			DEFAULT_KEYWORD = "请输入关键词或商品编号";
+			KEYWORD = "";
+			var channelId = "index";
+			_checkCAS('auth', 'cart');
+			//异步加载头部公告
+			var adMark = new Array();
+			adShowCommon("common_logo", "picture");
+			adShowCommon("announcement", "announcements");
+			if(channelId != 'order' && channelId != 'cart') {
+				adShowCommon("quick_search", "searchWord");
+				adShowCommon("head_top", "text");
+			}
+			var jsonAdMark = {};
+			for(var i in adMark) {
+				jsonAdMark[i] = adMark[i];
+			}
+
+			/*advert over*/
+			$(function() {
+				$('#input_textbox').focusin(function() {
+					if($(this).val() == $("#saveWord").val()) {
+						$(this).val('');
+					};
+				}).focusout(function() {
+					if($(this).val() == '') {
+						$(this).val($("#saveWord").val());
+					};
+				});
+				/*将请输入关键字变为空*/
+				$(".mbshop_searchContent .mbshop_searchLeft .iconfont").click(function() {
+					$("form[name='quicksearch']").submit();
+				});
+				$("form[name='quicksearch']").submit(function() {
+					var keyword = $('.mbshop_searchLeft #input_textbox');
+					if(keyword.val().toString() == $("#saveWord").val()) {
+						if($("#saveWord").val() != "请输入关键词或商品编号") {
+							$("[name=quicksearch]").attr('action', consts('index') + CMSURL);
+							var a = "请输入关键词或商品编号";
+						} else {
+							$("[name=quicksearch]").attr('action', searchUrl);
+							keyword.val('');
+						}
+					} else {
+						$("[name=quicksearch]").attr('action', searchUrl);
+					}
+				});
+			});
+		</script>
+		<style type="text/css">
+			.mbshop_home_Veo_classify {
+				width: 100%;
+				height: 28px;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 30px;
+				border-bottom: 1px solid #d51819;
+				padding: 20px 0 5px;
+			}
+			
+			.mbshop_home_Veo_classify ul {
+				width: 1200px;
+				margin: 0 auto;
+				float: none;
+			}
+			
+			.mbshop_home_Veo_classify li {
+				float: left;
+				padding: 0 15px;
+			}
+			
+			.mbshop_home_Veo_classify .mbshop_home_Veo_classify_shopping {
+				position: relative;
+				z-index: 899;
+				margin-top: -6px;
+				padding: 0 12px;
+				height: 40px;
+				width: 212px;
+				line-height: 40px;
+				cursor: pointer;
+				color: #fff;
+				background: #d51819;
+			}
+			
+			.mbshop_home_Veo_classify .mbshop_home_Veo_classify_shopping>.iconfont {
+				padding-right: 14px;
+				line-height: 40px;
+				vertical-align: sub;
+				font-size: 26px;
+				font-weight: 600;
+				color: #fff;
+			}
+			
+			.mbshop_home_page_V_sub_nav_box1 {
+				width: 224px;
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 44px;
+				z-index: 111;
+			}
+			
+			.mbshop_home_Veo_classify_shopping_pop_addclass {
+				display: block;
+			}
+			
+			.mbshop_home_page_V_sub_nav_box1 .mbshop_home_page_V_sub_nav li {
+				float: none;
+			}
+			/*站点图片广告位置调整*/
+			
+			.zhandianpic {
+				margin-top: -10px;
+			}
+		</style>
+		<!-- nav -->
+		<div class="mbshop_home_Veo_classify">
+			<ul>
+				<li class="mbshop_home_Veo_classify_shopping">
+					<i class="iconfont">&#xe608;</i>
+					<span>商品分类</span>
+					<div class="mbshop_home_page_V_sub_nav_box1" style="display:none;">
+					</div>
+				</li>
+				<li id="siteNavindex">
+
+					<a class="textAdvert" id="siteindex" textlink="http://www.banggo.com/" href="javascript:void(0);">
+						<img class="zhandianpic" src="http://img4.banggo.com/sources/cms/P11/sy-04.png" alt="">
+					</a>
+				</li>
+				<li id="siteNavbrand">
+
+					<a class="textAdvert" id="sitebrand" textlink="http://www.banggo.com/theme/ZP-ZHUTI20170406-11.shtml?avn=1" href="javascript:void(0);">
+						<img class="zhandianpic" src="http://m3.banggo.com/sources/cms/P1212/cplogo.png" alt="">
+					</a>
+				</li>
+				<li id="siteNavT20160513-36A">
+
+					<a class="textAdvert" id="siteT20160513-36A" textlink="http://www.banggo.com/theme/s20160628-F.shtml?avn=1" href="javascript:void(0);">
+						<img class="zhandianpic" src="http://m2.banggo.com/sources/cms/P1212/ydlogo.png" alt="">
+					</a>
+				</li>
+				<li id="siteNavA20160828">
+
+					<a class="textAdvert" id="siteA20160828" textlink="http://www.banggo.com/theme/HP20161110.shtml?avn=1blank" href="javascript:void(0);">
+						<img class="zhandianpic" src="http://img4.banggo.com/sources/cms/P11/lqzx-pc.png" alt="">
+					</a>
+				</li>
+				<li id="siteNavxkzx">
+
+					<a class="textAdvert" id="sitexkzx" textlink="http://www.banggo.com/theme/HW20161111-12.shtml?avn=1" href="javascript:void(0);">
+						<img class="zhandianpic" src="http://img4.banggo.com/sources/cms/P11/xkzx-04.png" alt="">
+					</a>
+				</li>
+				<!-- 右侧图片导航 -->
+				<li class="menu_top_right_pic" id='ad_common_predict'>
+					<a href="" target="_blank"><img src="" alt=""></a>
+				</li>
+				<script>
+					adShow("common_predict", 'aStart');
+				</script>
+			</ul>
+		</div>
+		<script>
+			$(function() {
+				$('[class=textAdvert]').click(function() {
+					if($(this).attr('textlink'))
+						var url = encodeURI($(this).attr('textlink'));
+					window.location.href = url;
+				});
+				// 点击效果出现，隐藏
+				$('.mbshop_home_Veo_classify_shopping').mouseenter(function(event) {
+					$('.mbshop_home_page_V_sub_nav_box1').show();
+				});
+				$('.mbshop_home_Veo_classify_shopping').mouseleave(function(event) {
+					$('.mbshop_home_page_V_sub_nav_box1').hide();
+				});
+			});
+		</script>
+
+		<!-- banner头图开始 -->
+		<!-- 控制头图背景颜色 头图背景会和图片的颜色一致 -->
+		<div class="mbshop_home_page_Z_banner">
+			<!-- banner头图版心 -->
+			<div class="mbshop_home_page_Z_banner_wrap">
+				<!-- banner_left 侧边导航-->
+				<div class="Zindex_banner_left">
+					<div class="mbshop_home_page_V_sub_nav_box">
+						<ul class="mbshop_home_page_V_sub_nav">
+							<!-- 第一级男装菜单 -->
+
+							<li class="Zindex_span_position1">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_a.shtml?avn=1">
+							热销分类						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_299"></div>
+										<script>
+											adShow("299");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_3_-1_a_a_a_97-202s.shtml?avn=1">男生热门</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_3_a_a_a_a_a_3_-1_a_a_a.shtml?word=春新品">春新品</a>
+													<a href="http://search.banggo.com/search/a_134_a_a_a_a_a_a_a_a_a_a_85-101s.shtml?word=&amp;avn=1">新品夹克</a>
+													<a href="http://search.banggo.com/search/a_134_a_a_a_a_a_a_a_a_a_a.shtml?word=军装夹克&amp;avn=1">军装夹克</a>
+													<a href="http://search.banggo.com/search/a_115_a_a_a_a_a_3_-1_a_a_a_97-202s.shtml?avn=1">衬衫</a>
+													<a href="http://search.banggo.com/search/a_3_a_a_a_a_a_a_a_a_a_a.shtml?word=慢跑裤&amp;avn=1">慢跑裤</a>
+													<a href="http://search.banggo.com/search/a_124_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">百搭休闲裤</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_3_-1_a_a_a_97-203s.shtml?avn=1">女生热门</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_4_a_a_a_a_a_3_-1_a_a_a.shtml?word=春新品">春新品</a>
+													<a href="http://search.banggo.com/search/a_4_a_a_a_a_a_a_a_a_a_a.shtml?word=女装商场同款&amp;avn=1">商场同款</a>
+													<a href="http://search.banggo.com/search/a_171_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">风衣</a>
+													<a href="http://search.banggo.com/search/a_172_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">夹克</a>
+													<a href="http://search.banggo.com/search/a_25_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">裙装</a>
+													<a href="http://search.banggo.com/search/a_152_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">背带裙/背带裤</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=阔腿裤&amp;avn=1">阔腿裤</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_7_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">儿童热门</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_7_a_a_a_a_a_3_-1_a_a_a.shtml?word=春新品">春新品</a>
+													<a href="http://search.banggo.com/search/a_47_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">套装</a>
+													<a href="http://search.banggo.com/search/a_48_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">外套</a>
+													<a href="http://search.banggo.com/search/a_44_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">裤子</a>
+													<a href="http://search.banggo.com/search/a_45_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">毛衣</a>
+													<a href="http://search.banggo.com/search/a_49_a_a_a_a_a_3_-1_a_a_a.shtml">卫衣</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_6_a_a_a_a_a_2_-1_a_a_a.shtml?avn=1">生活热门</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=随行杯&amp;avn=1">随行杯</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=取暖小件&amp;avn=1">取暖小件</a>
+													<a href="http://search.banggo.com/search/a_32_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">创意礼品</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=面膜&amp;avn=1">面膜</a>
+													<a href="http://search.banggo.com/search/a_458_a_a_a_a_a_a_a_a_a_a.shtml?word=护肤套装&amp;avn=1">护肤套装</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=礼盒&amp;avn=1">礼盒</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=家居鞋/拖鞋&amp;avn=1">家居鞋/拖鞋</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=披毯/盖毯&amp;avn=1">披毯/盖毯</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=保温杯&amp;avn=1">保温杯</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_djlxCategoryPic"></div>
+												<script>
+													adShow("djlxCategoryPic");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_223"></div>
+													<script>
+														adShow("223");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position2">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_3|13_a_a_a_a_a_3_-1_a_a_a_97-202s.shtml?avn=1">
+							男装						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_300"></div>
+										<script>
+											adShow("300");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_15|16|18|19|20_a_4|MB_a_a_a_a_a_a_a_a_97-1741.shtml">上装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_137_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">呢大衣</a>
+													<a href="http://search.banggo.com/search/a_131_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">毛织背心</a>
+													<a href="http://search.banggo.com/search/a_138_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">皮衣</a>
+													<a href="http://search.banggo.com/search/a_134_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">夹克</a>
+													<a href="http://search.banggo.com/search/a_18_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">毛衣</a>
+													<a href="http://search.banggo.com/search/a_112_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">长袖T恤</a>
+													<a href="http://search.banggo.com/search/a_20_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">卫衣</a>
+													<a href="http://search.banggo.com/search/a_115_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">长袖衬衫</a>
+													<a href="http://search.banggo.com/search/a_139_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">西装</a>
+													<a href="http://search.banggo.com/search/a_142.shtml?avn=1">套头卫衣</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_17.shtml">下装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_120_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">牛仔长裤</a>
+													<a href="http://search.banggo.com/search/a_124_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">休闲长裤</a>
+													<a href="http://search.banggo.com/search/a_123_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">西裤</a>
+													<a href="http://search.banggo.com/search/a_127_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">运动长裤</a>
+													<a href="http://search.banggo.com/search/a_127_a_a_a_a_a_3_-1_a_a_a_97-202s.shtml?avn=1">针织长裤</a>
+													<a href="http://search.banggo.com/search/a_17.shtml?word=中短裤&amp;avn=1">中短裤</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_13_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">内衣</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_71_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">背心</a>
+													<a href="http://search.banggo.com/search/a_83_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">内衣裤装</a>
+													<a href="http://search.banggo.com/search/a_90_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">袜子</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=家居服 男&amp;avn=1">家居服</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_303"></div>
+												<script>
+													adShow("303");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_302"></div>
+													<script>
+														adShow("302");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position3">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_4|13_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">
+							女装						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_311"></div>
+										<script>
+											adShow("311");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_26.shtml?avn=1">上装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_171_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">风衣</a>
+													<a href="http://search.banggo.com/search/a_172.shtml?avn=1">夹克</a>
+													<a href="http://search.banggo.com/search/a_26_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">外套</a>
+													<a href="http://search.banggo.com/search/a_24_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">毛衣</a>
+													<a href="http://search.banggo.com/search/a_148_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">长袖衬衫</a>
+													<a href="http://search.banggo.com/search/a_175.shtml?avn=1">大衣</a>
+													<a href="http://search.banggo.com/search/a_24.shtml?avn=1">毛衣</a>
+													<a href="http://search.banggo.com/search/a_173.shtml?avn=1">马甲</a>
+													<a href="http://search.banggo.com/search/a_21.shtml?avn=1">T恤</a>
+													<a href="http://search.banggo.com/search/a_27_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">卫衣</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_23.shtml?avn=1">下装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_155_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">牛仔裤</a>
+													<a href="http://search.banggo.com/search/a_153.shtml">打底裤</a>
+													<a href="http://search.banggo.com/search/a_163_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">运动裤</a>
+													<a href="http://search.banggo.com/search/a_159_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">休闲裤</a>
+													<a href="http://search.banggo.com/search/a_154_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">连身裤</a>
+													<a href="http://search.banggo.com/search/a_23_a_a_a_a_a_2_-1_a_a_a.shtml?word=阔腿裤&amp;avn=1">阔腿裤</a>
+													<a href="http://search.banggo.com/search/a_23_a_a_a_a_a_a_a_a_a_a.shtml?word=短裤&amp;avn=1">短裤</a>
+													<a href="http://search.banggo.com/search/a_163|164|165_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">针织休闲裤</a>
+													<a href="http://search.banggo.com/search/a_158_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">西裤</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_25.shtml?avn=1">裙装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_170.shtml?avn=1">连衣裙</a>
+													<a href="http://search.banggo.com/search/a_169_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">半身裙</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_13_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">内衣</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_73_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">吊带</a>
+													<a href="http://search.banggo.com/search/a_83_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">内衣裤装</a>
+													<a href="http://search.banggo.com/search/a_77_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">家居套装</a>
+													<a href="http://search.banggo.com/search/a_91_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">文胸</a>
+													<a href="http://search.banggo.com/search/a_90_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">袜子</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_girlCategoryPic"></div>
+												<script>
+													adShow("girlCategoryPic");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_225"></div>
+													<script>
+														adShow("225");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position4">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_7|54|14_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">
+							儿童						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_kidsTestCategory"></div>
+										<script>
+											adShow("kidsTestCategory");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_7_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">上装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_348_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">套头毛衣</a>
+													<a href="http://search.banggo.com/search/a_355_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">夹克</a>
+													<a href="http://search.banggo.com/search/a_329_a_a_a_a_a_a_a_a_a_a_97-1742|1743|1744|2649.shtml?avn=1">长袖T恤</a>
+													<a href="http://search.banggo.com/search/a_43_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">衬衫</a>
+													<a href="http://search.banggo.com/search/a_361_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">套头卫衣</a>
+													<a href="http://search.banggo.com/search/a_48_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">外套</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_7_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">下装</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_344.shtml?avn=1">针织裤</a>
+													<a href="http://search.banggo.com/search/a_336_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">背带裤</a>
+													<a href="http://search.banggo.com/search/a_7.shtml?word=牛仔裤&amp;avn=1">牛仔裤</a>
+													<a href="http://search.banggo.com/search/a_7.shtml?word=休闲裤&amp;avn=1">休闲裤</a>
+													<a href="http://search.banggo.com/search/a_337.shtml?avn=1">打底裤</a>
+													<a href="http://search.banggo.com/search/a_349.shtml?avn=1">半身裙</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_47_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">连身</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_351_a_a_a_a_a_a_a_a_a_a.shtml">连衣裙</a>
+													<a href="http://search.banggo.com/search/a_353_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">卫衣套装</a>
+													<a href="http://search.banggo.com/search/a_336_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">背带裤</a>
+													<a href="http://search.banggo.com/search/a_352_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">T恤套装</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_29|52|54_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">搭配</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_400_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">童鞋</a>
+													<a href="http://search.banggo.com/search/a_52_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">童包</a>
+													<a href="http://search.banggo.com/search/a_403|407_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">童配饰</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_331"></div>
+												<script>
+													adShow("331");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_kidslogo"></div>
+													<script>
+														adShow("kidslogo");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position5">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_9_a_a_a_a_a_3_-1_a_a_a.shtml?avn=1">
+							鞋履						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_shoesTestCategory"></div>
+										<script>
+											adShow("shoesTestCategory");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_53_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">人气男鞋</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_394_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">休闲鞋</a>
+													<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?word=运动鞋&amp;avn=1">运动鞋</a>
+													<a href="http://search.banggo.com/search/a_392_a_a_a_a_a_a_a_a_a_a_97-202s.shtml">商务鞋</a>
+													<a href="http://search.banggo.com/search/a_393_a_a_a_a_a_a_a_a_a_a_97-202s.shtml">时装鞋</a>
+													<a href="http://search.banggo.com/search/a_381_a_a_a_a_a_a_a_a_a_a_97-202s.shtml">帆布鞋</a>
+													<a href="http://search.banggo.com/search/a_389_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">跑步鞋</a>
+													<a href="http://search.banggo.com/search/a_385_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">篮球鞋</a>
+													<a href="http://search.banggo.com/search/a_387|386_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">凉拖凉鞋</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a.shtml?word=女鞋">人气女鞋</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_381_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">帆布鞋</a>
+													<a href="http://search.banggo.com/search/a_394_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?avn=1">休闲鞋</a>
+													<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?word=运动鞋&amp;avn=1">运动鞋</a>
+													<a href="http://search.banggo.com/search/a_53_a_a_a_a_a_2_-1_a_a_a_97-1742.shtml?word=凉鞋/拖&amp;avn=1">凉拖凉鞋</a>
+													<a href="http://search.banggo.com/search/a_395_a_a_a_a_a_a_a_a_a_a_97-1742.shtml?avn=1">潮靴</a>
+													<a href="http://search.banggo.com/search/a_392_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">商务鞋</a>
+													<a href="http://search.banggo.com/search/a_393_a_a_a_a_a_a_a_a_a_a_97-203s.shtml">时装鞋</a>
+													<a href="http://search.banggo.com/search/a_53_a_a_a_a_a_3_-1_a_a_a_97-1742.shtml?word=跑步鞋&amp;avn=1">跑步鞋</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_shoesCategoryPic"></div>
+												<script>
+													adShow("shoesCategoryPic");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_shoeslogo"></div>
+													<script>
+														adShow("shoeslogo");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position6">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_8_a_a_a_a_a_2_-1_a_a_a.shtml?avn=1">
+							箱包						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_bagTestCategory"></div>
+										<script>
+											adShow("bagTestCategory");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_50_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">品质男包</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_372_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?avn=1">双肩包</a>
+													<a href="http://search.banggo.com/search/a_373_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?avn=1">斜挎包</a>
+													<a href="http://search.banggo.com/search/a_8_a_a_a_a_a_a_a_a_a_a_97-202s.shtml?word=书包&amp;avn=1">书包</a>
+													<a href="http://search.banggo.com/search/a_367_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?avn=1">钱包</a>
+													<a href="http://search.banggo.com/search/a_466_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">拉杆箱</a>
+													<a href="http://search.banggo.com/search/a_374_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?avn=1">胸包</a>
+													<a href="http://search.banggo.com/search/a_370|371_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">手提包</a>
+													<a href="http://search.banggo.com/search/a_363_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?avn=1">单肩包</a>
+													<a href="http://search.banggo.com/search/a_375_a_a_a_a_a_a_a_a_a_a_97-1741.shtml?avn=1">腰包</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_50_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">潮流女包</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_50_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?word=书包&amp;avn=1">书包</a>
+													<a href="http://search.banggo.com/search/a_372_a_a_a_a_a_a_a_a_a_a_97-1742.shtml?avn=1">双肩包</a>
+													<a href="http://search.banggo.com/search/a_371_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">手提包</a>
+													<a href="http://search.banggo.com/search/a_373_a_a_a_a_a_a_a_a_a_a_97-1742.shtml?avn=1">斜挎包</a>
+													<a href="http://search.banggo.com/search/a_370_a_a_a_a_a_a_a_a_a_a_97-1742|1743.shtml">手拿包</a>
+													<a href="http://search.banggo.com/search/a_363_a_a_a_a_a_a_a_a_a_a_97-1742.shtml?avn=1">单肩包</a>
+													<a href="http://search.banggo.com/search/a_367_a_a_a_a_a_a_a_a_a_a_97-1742.shtml?avn=1">钱包/卡包</a>
+													<a href="http://search.banggo.com/search/a_466_a_a_a_a_a_a_a_a_a_a_97-204s.shtml?avn=1">拉杆箱</a>
+													<a href="http://search.banggo.com/search/a_409_a_a_a_a_a_a_a_a_a_a_97-1742.shtml?avn=1">化妆包</a>
+													<a href="http://search.banggo.com/search/a_408_a_a_a_a_a_a_a_a_a_a_97-1742|1743.shtml">收纳包</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_bagCategoryPic"></div>
+												<script>
+													adShow("bagCategoryPic");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_baglogo"></div>
+													<script>
+														adShow("baglogo");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position7">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_5|2|14|29_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">
+							配饰/内衣						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_lifeTestCategory"></div>
+										<script>
+											adShow("lifeTestCategory");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_5_a_a_a_a_a_2_-1_a_a_a.shtml?avn=1">配饰</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_196_a_a_a_a_a_2_-1_a_a_a.shtml?avn=1">腰带/皮带</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=帽子&amp;avn=1">帽子</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=手套&amp;avn=1">手套</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=围巾/丝巾/披肩&amp;avn=1">围巾/丝巾/披肩</a>
+													<a href="http://search.banggo.com/search/a_193_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">腕表</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_2.shtml">内衣</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_84.shtml?avn=1">内衣上装</a>
+													<a href="http://search.banggo.com/search/a_2.shtml?word=内衣下装">内衣下装</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=家居套装">家居套装</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=文胸">文胸</a>
+													<a href="http://search.banggo.com/search/a_a.shtml?word=袜子">袜子</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_lifeCategoryPic"></div>
+												<script>
+													adShow("lifeCategoryPic");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_lifelogo"></div>
+													<script>
+														adShow("lifelogo");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+							<li class="Zindex_span_position8">
+								<!-- 菜单内容部分 -->
+								<dl>
+									<dt>
+						<a href = "http://search.banggo.com/search/a_a_5-599_a_a_a_a_3_-1_1-50_a_a.shtml?word=&amp;avn=1">
+							折扣SALE						</a>
+						<!-- 红色箭头 -->
+						<i class="iconfont">&#xe60a;</i>
+					</dt>
+									<dd>
+										<div class="getActId" id="ad_nyTestCategory"></div>
+										<script>
+											adShow("nyTestCategory");
+										</script>
+									</dd>
+								</dl>
+								<!--li hover时弹出框 -->
+								<div class="Zindex_sub_nav_hover_wrap">
+									<div class="Zindex_sub_nav_hover_con">
+										<!-- 弹出框左边内容start -->
+										<div class="Zindex_sub_nav_hover_con_left">
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">一折区</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_3_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">男生</a>
+													<a href="http://search.banggo.com/search/a_4_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">女生</a>
+													<a href="http://search.banggo.com/search/a_7_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">童装</a>
+													<a href="http://search.banggo.com/search/a_9_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">鞋履</a>
+													<a href="http://search.banggo.com/search/a_8_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">箱包</a>
+													<a href="http://search.banggo.com/search/a_a_5-599_a_a_a_a_2_-1_1-11_a_a.shtml?word=&amp;avn=1">配饰</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_2_-1_10-20_a_a.shtml?word=&amp;avn=1">二折区</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_3_5-599_a_a_a_a_2_-1_11-21_a_a.shtml?word=&amp;avn=1">男生</a>
+													<a href="http://search.banggo.com/search/a_4_5-599_a_a_a_a_2_-1_11-21_a_a.shtml?word=&amp;avn=1">女生</a>
+													<a href="http://search.banggo.com/search/a_7_5-599_a_a_a_a_2_-1_11-21_a_a.shtml?word=&amp;avn=1">童装</a>
+													<a href="http://search.banggo.com/search/a_9_5-599_a_a_a_a_2_-1_11-21_a_a.shtml?word=&amp;avn=1">鞋履</a>
+													<a href="http://search.banggo.com/search/a_8_5-599_a_a_a_a_2_-1_11-21_a_a.shtml?word=&amp;avn=1">箱包</a>
+													<a href="http://search.banggo.com/search/a_5_5-599_a_a_a_a_2_-1_11-21_a_a.shtml?word=&amp;avn=1">配饰</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_2_-1_20-30_a_a.shtml?word=&amp;avn=1">三折区</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_3_5-599_a_a_a_a_2_-1_21-31_a_a.shtml?word=&amp;avn=1">男生</a>
+													<a href="http://search.banggo.com/search/a_4_5-599_a_a_a_a_2_-1_21-31_a_a.shtml?word=&amp;avn=1">女生</a>
+													<a href="http://search.banggo.com/search/a_7_5-599_a_a_a_a_2_-1_21-31_a_a.shtml?word=&amp;avn=1">童装</a>
+													<a href="http://search.banggo.com/search/a_9_5-599_a_a_a_a_2_-1_21-31_a_a.shtml?word=&amp;avn=1">鞋履</a>
+													<a href="http://search.banggo.com/search/a_8_5-599_a_a_a_a_2_-1_21-31_a_a.shtml?word=&amp;avn=1">箱包</a>
+													<a href="http://search.banggo.com/search/a_5_5-599_a_a_a_a_2_-1_21-31_a_a.shtml?word=&amp;avn=1">配饰</a>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+										<a href="http://search.banggo.com/search/a_a_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">三折封顶</a>
+									</dt>
+												<dd>
+													<a href="http://search.banggo.com/search/a_3_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">男生</a>
+													<a href="http://search.banggo.com/search/a_4_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">女生</a>
+													<a href="http://search.banggo.com/search/a_7_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">童装</a>
+													<a href="http://search.banggo.com/search/a_9_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">鞋履</a>
+													<a href="http://search.banggo.com/search/a_8_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">箱包</a>
+													<a href="http://search.banggo.com/search/a_5_a_a_a_a_a_6_1_1-30_a_a.shtml?word=&amp;avn=1">配饰</a>
+												</dd>
+											</dl>
+										</div>
+										<!-- 弹出框左边内容end -->
+										<!-- 弹出框右边产品展示start-->
+										<div class="Zindex_sub_nav_hover_con_right">
+											<!--li：hover时 弹出框右边产品展示-->
+											<div class="Zindex_hover_banner">
+												<!-- <a href=""><img src="images/indexhoverbanner00.png" alt=""></a> -->
+												<div class="getActId" id="ad_nyCategoryPic"></div>
+												<script>
+													adShow("nyCategoryPic");
+												</script>
+											</div>
+											<!--li：hover时 弹出框右边logo分区-->
+											<div class="Zindex_hover_hot_brand">
+												<dl>
+													<div class="getActId" id="ad_nylogo"></div>
+													<script>
+														adShow("nylogo");
+													</script>
+												</dl>
+											</div>
+										</div>
+										<!-- 灰色箭头 -->
+										<span></span>
+										<!-- 弹出框右边产品展示ending -->
+									</div>
+								</div>
+							</li>
+							<!-- 第一级菜单结束 -->
+						</ul>
+					</div>
+
+					<style>
+						.Zindex_sub_nav_hover_con_left dt {
+							width: 136px !important;
+						}
+						
+						.Zindex_sub_nav_hover_con_left dd {
+							width: 136px !important;
+							height: auto !important;
+						}
+						
+						.mbshop_home_page_V_sub_nav_box {
+							width: 224px;
+							height: 530px;
+							border: 1px solid #d51819;
+							border-top: 0;
+							padding-left: 10px;
+							float: left;
+							position: relative;
+							z-index: 99;
+							background: #fff;
+							line-height: 18px;
+						}
+						
+						.mbshop_home_page_V_sub_nav {
+							width: 224px;
+							height: 530px;
+						}
+						
+						.mbshop_home_page_V_sub_nav_box1 .mbshop_home_page_V_sub_nav_box {
+							margin-top: -4px;
+						}
+						
+						.mbshop_home_page_V_sub_nav_box1 .mbshop_home_page_V_sub_nav li {
+							padding: 0;
+						}
+						
+						.mbshop_home_page_V_sub_nav li {
+							width: 224px;
+							height: auto;
+							overflow: hidden;
+						}
+						
+						.mbshop_home_page_V_sub_nav li:hover i {
+							display: none;
+						}
+						
+						.mbshop_home_page_V_sub_nav dt {
+							position: relative;
+							width: 224px;
+							height: 19px;
+							margin-top: 10px !important;
+							margin-bottom: 0;
+							overflow: hidden;
+						}
+						
+						.mbshop_home_page_V_sub_nav dd {
+							width: 221px;
+							height: auto;
+						}
+						
+						@-moz-document url-prefix() {
+							.mbshop_home_page_V_sub_nav dt {
+								margin-top: 11px;
+							}
+						}
+						
+						.mbshop_home_page_V_sub_nav dl {
+							position: relative;
+							width: 224px;
+							overflow: hidden;
+						}
+						
+						.mbshop_home_page_V_sub_nav dt i {
+							position: absolute;
+							right: 10px;
+							top: 2px;
+							width: 9px;
+							height: 14px;
+							font-size: 12px;
+							color: #d51819;
+							font-weight: bold;
+							background: none;
+						}
+						
+						.mbshop_home_page_V_sub_nav dt a {
+							display: inline-block;
+							font: bold 14px "Microsoft YaHei" !important;
+							padding-right: 10px;
+							overflow: hidden;
+							color: #222;
+						}
+						
+						.mbshop_home_page_V_sub_nav a {
+							display: inline-block;
+							font: 14px/19px "Microsoft YaHei";
+							color: #696969;
+							padding-right: 3px;
+							overflow: hidden;
+						}
+						/*头图侧边导航li：hover时弹出的二级菜单盒子样式*/
+						
+						.mbshop_home_page_V_sub_nav li .Zindex_sub_nav_hover_wrap {
+							overflow: hidden;
+						}
+						
+						.mbshop_home_page_V_sub_nav li .Zindex_sub_nav_hover_con {
+							width: 722px;
+							height: 530px;
+							border: 1px solid #999;
+							border-top: 0;
+							background-color: #fff;
+							position: absolute;
+							top: 0;
+							left: 238px;
+							z-index: 99;
+							display: none;
+						}
+						/*侧边导航对应的小三角*/
+						
+						.Zindex_sub_nav_hover_con span {
+							position: absolute;
+							left: -7px;
+							width: 7px;
+							height: 14px;
+							background: url(http://s.banggo.com/pub7/images/mbshop/veoimg/Veo_mbshop_spirit_pic.png) 0 -211px no-repeat;
+						}
+						
+						.Zindex_span_position1 .Zindex_sub_nav_hover_con span {
+							top: 13px;
+						}
+						
+						.Zindex_span_position2 .Zindex_sub_nav_hover_con span {
+							top: 86px;
+						}
+						
+						.Zindex_span_position3 .Zindex_sub_nav_hover_con span {
+							top: 159px;
+						}
+						
+						.Zindex_span_position4 .Zindex_sub_nav_hover_con span {
+							top: 232px;
+						}
+						
+						.Zindex_span_position5 .Zindex_sub_nav_hover_con span {
+							top: 305px;
+						}
+						
+						.Zindex_span_position6 .Zindex_sub_nav_hover_con span {
+							top: 378px;
+						}
+						
+						.Zindex_span_position7 .Zindex_sub_nav_hover_con span {
+							top: 429px;
+						}
+						
+						.Zindex_span_position8 .Zindex_sub_nav_hover_con span {
+							top: 480px;
+						}
+						
+						.Zindex_span_position1,
+						.Zindex_span_position2,
+						.Zindex_span_position3,
+						.Zindex_span_position4,
+						.Zindex_span_position5,
+						.Zindex_span_position6 {
+							font-size: 14px;
+							font-weight: bold;
+						}
+						
+						.Zindex_span_position1 dd,
+						.Zindex_span_position2 dd,
+						.Zindex_span_position3 dd,
+						.Zindex_span_position4 dd,
+						.Zindex_span_position5 dd {
+							height: 44px;
+						}
+						
+						.Zindex_span_position6 dd,
+						.Zindex_span_position7 dd,
+						.Zindex_span_position8 dd {
+							height: 22px;
+						}
+						/*li：hover时二级菜单的左边样式*/
+						
+						.Zindex_sub_nav_hover_con_left {
+							width: 167px;
+							height: 513px;
+							float: left;
+							border-right: 1px solid #dcdcdc;
+							padding: 14px 0 0 14px;
+							overflow: hidden;
+						}
+						
+						.Zindex_sub_nav_hover_con_left dl {
+							padding-bottom: 8px;
+							width: 165px !important;
+							height: auto !important;
+						}
+						
+						.Zindex_sub_nav_hover_con_left dt {
+							margin-bottom: 9px;
+							margin-top: 0 !important;
+						}
+						
+						.Zindex_sub_nav_hover_con_left dt a {
+							/*font:bold 16px/16px "Microsoft YaHei"; */
+							font: bold 15px "Microsoft YaHei" !important;
+						}
+						
+						.Zindex_sub_nav_hover_con_left dt a:hover {
+							color: #e95b4c;
+							text-decoration: none;
+						}
+						
+						.Zindex_sub_nav_hover_con_left dd a {
+							display: inline-block;
+							padding-right: 10px !important;
+							color: #999 !important;
+							line-height: 19px !important;
+						}
+						/*li：hover时二级菜单的右边样式*/
+						
+						.Zindex_sub_nav_hover_con_right {
+							float: right;
+							width: 540px;
+							height: 527px;
+						}
+						
+						.Zindex_sub_nav_hover_con_right a {
+							padding: 0;
+						}
+						
+						.Zindex_sub_nav_hover_con_right .Zindex_hover_hot_brand {
+							width: 514px;
+							height: auto;
+							overflow: hidden;
+							padding: 0 13px;
+						}
+						
+						.Zindex_sub_nav_hover_con_right .Zindex_hover_hot_brand dl p {
+							float: left;
+							clear: both;
+							padding: 15px 0 5px 0;
+							font: bold 15px "微软雅黑";
+							width: 100%;
+						}
+						
+						.Zindex_sub_nav_hover_con_right dt {
+							margin: 20px 0 0 19px;
+						}
+						
+						.Zindex_sub_nav_hover_con_right dd {
+							float: left;
+							width: 110px;
+							height: 35px;
+							margin: 19px 15px 0 0 !important;
+						}
+						
+						.Zindex_sub_nav_hover_con_right dd.marginrt24 {
+							margin-right: 24px;
+						}
+						
+						.Zindex_sub_nav_hover_con_right dd.nomarginrt {
+							margin-right: 0;
+						}
+						/*轮播图盒子*/
+						
+						.mbshop_home_page_V_banner_box {
+							float: left;
+							position: relative;
+							width: 718px;
+							height: 526px;
+							padding: 5px;
+							padding-bottom: 0;
+						}
+						/*左右按钮*/
+						
+						.mbshop_home_page_V_banner_btn span {
+							display: none;
+							position: absolute;
+							right: 0;
+							top: 45%;
+							z-index: 88;
+							margin-top: -25px;
+							padding: 5px 6px;
+							width: 20px;
+							height: 50px;
+							line-height: 50px;
+							text-align: center;
+							font-family: simsun;
+							color: #fff;
+							font-size: 44px;
+							background: gray;
+							background: rgba(0, 0, 0, .3);
+							filter: alpha(opacity=30);
+							cursor: pointer;
+						}
+						
+						.mbshop_home_page_V_banner_btn .mbshop_home_page_V_banner_btn_left {
+							left: 0;
+						}
+						
+						.mbshop_home_page_V_banner_box:hover .mbshop_home_page_V_banner_btn span {
+							display: block;
+						}
+						
+						.mbshop_home_page_V_banner_pic {
+							width: 718px;
+							height: 475px;
+							position: relative;
+						}
+						
+						.mbshop_home_page_V_banner_pic li {
+							width: 718px;
+							height: 475px;
+							position: absolute;
+							left: 0;
+							top: 0;
+							display: none;
+						}
+						
+						.mbshop_home_page_V_banner_nav_box {
+							box-sizing: border-box;
+							width: 718px;
+							height: 50px;
+							margin-top: 1px;
+							border: 1px solid #dcdcdc;
+							border-top: 0;
+							text-align: center;
+							overflow: hidden;
+						}
+						
+						.mbshop_home_page_V_banner_nav {
+							width: 718px;
+							height: auto;
+							background-color: #fff;
+						}
+						
+						.mbshop_home_page_V_banner_nav li.mbshop_home_page_V_banner_nav_click {
+							padding-top: 0;
+							border-top: 2px solid #d51819;
+							color: #000;
+						}
+						
+						.mbshop_home_page_V_banner_nav li {
+							float: left;
+							position: relative;
+							box-sizing: border-box;
+							height: 50px;
+							line-height: 50px;
+							padding: 1px 0 6px 0;
+							border-top: 1px solid #dcdcdc;
+							text-align: center;
+							font-size: 14px;
+							font-weight: bold;
+							letter-spacing: 2px;
+							cursor: pointer;
+							color: #666;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							/*超出字数用省略号*/
+						}
+					</style>
+					<script>
+						// 菜单栏小li的划上效果
+						;
+						(function() {
+							$.fn.mbshop_home_page_V_sub_nav = function(options) {
+								// 菜单选项栏
+								var sub_nav_menuli = options.sub_nav_menuli;
+								// 弹框盒子名称
+								var sub_nav_pop = options.sub_nav_pop;
+								// 显示等待时间
+								var sub_nav_wait = options.sub_nav_wait;
+								// 右移时间
+								var sub_nav_Rmove = options.sub_nav_Rmove;
+								// 左移时间
+								var sub_nav_Lmove = options.sub_nav_Lmove;
+								// 隐藏时间
+								var sub_nav_hide = options.sub_nav_hide;
+
+								sub_nav_menuli.mouseenter(function(event) {
+									var sub_nav_menu = $(this).find(sub_nav_pop);
+									sub_nav_menu.stop().animate({
+										'left': '234px',
+										'opacity': '0',
+										'z-index': '99'
+									}, sub_nav_wait, function() {
+										sub_nav_menu.show();
+										sub_nav_menu.css('opacity', '1');
+										$(sub_nav_menu).find('img').each(function() {
+											$(this).attr('src', $(this).data('original'));
+										});
+									});
+								});
+								// 菜单栏小li的离开效果
+								sub_nav_menuli.mouseleave(function(event) {
+									var sub_nav_menu = $(this).find(sub_nav_pop);
+									sub_nav_menu.stop().animate({
+										'left': '234px',
+										'opacity': '0',
+										'z-index': '1'
+									}, sub_nav_hide, function() {
+										sub_nav_menu.css('display', 'none');
+									});
+								});
+
+							}
+						})(jQuery)
+						/*banner_left开始*/
+						$('.mbshop_home_page_V_sub_nav_box').mbshop_home_page_V_sub_nav({
+							// 菜单选项栏
+							sub_nav_menuli: $('.mbshop_home_page_V_sub_nav li'),
+							// 弹框盒子名称
+							sub_nav_pop: '.Zindex_sub_nav_hover_con',
+							// 显示等待时间
+							sub_nav_wait: 30,
+							// 右移时间
+							sub_nav_Rmove: 300,
+							// 左移时间
+							sub_nav_Lmove: 100,
+							// 隐藏时间
+							sub_nav_hide: 200
+						});
+						/*banner_left结束*/
+					</script>
+				</div>
+				<!-- bannerleft结束 -->
+
+				<!-- banner轮播图开始 -->
+				<div class="mbshop_home_page_V_banner_box">
+					<!-- 轮播图左右切换按钮 -->
+					<div class="mbshop_home_page_V_banner_btn">
+						<span class="mbshop_home_page_V_banner_btn_left"><</span>
+						<span class="mbshop_home_page_V_banner_btn_right">></span>
+					</div>
+					<!-- 轮播的图片 -->
+					<ul class="mbshop_home_page_V_banner_pic" id="ad_index_new_scroll">
+
+						<li title="" style="block">
+							<a href=""><img width="720" height="480" src="http://img2.banggo.com/sources/cms/20150814/youshang1-banner.jpg" alt=""></a>
+						</li>
+						<li title="" style="display">
+							<a href=""><img width="720" height="480" src="http://img4.banggo.com/sources/cms/20151214/sylb11111.jpg" alt=""></a>
+						</li>
+					</ul>
+					<script>
+						adShow("index_new_scroll", 'scroll', 'index');
+					</script>
+					<!-- 头图底边导航 -->
+					<div class="mbshop_home_page_V_banner_nav_box">
+						<ol class="mbshop_home_page_V_banner_nav">
+							<div class="getActId" id="ad_index_scroll_nav">
+							</div>
+							<script>
+								adShow("index_scroll_nav", "scroll", "index");
+							</script>
+						</ol>
+					</div>
+				</div>
+				<!-- banner轮播图结束 -->
+
+				<!-- banner 右边开始 -->
+				<div class="Zindex_banner_right">
+					<div class="getActId" id="ad_index_right">
+					</div>
+					<script>
+						adShow("index_right", "timer");
+					</script>
+				</div>
+				<!-- banner right结束 -->
+
+				<!-- 首页电梯 -->
+				<div class="bg_floop_ad_wrap" id="ad_activity_index_float"></div>
+			</div>
+		</div>
+		<!-- banner头图结束 -->
+		<!-- 热门商品分区start -->
+		<div class="zyHot_BrandCon">
+			<div class="zyHot_Brand_btn">
+				<span class="rec_btn_rt"><img src="http://img1.banggo.com/sources/cms/20150828/rec_btn_rt.png" alt=""></span>
+				<span class="rec_btn_lf"><img src="http://img1.banggo.com/sources/cms/20150828/rec_btn_lt.png" alt=""></span>
+			</div>
+
+			<div class="getActId" id="ad_index_hot_goods">
+			</div>
+		</div>
+
+		<script>
+			if(typeof(adList['activity_index_float']) != 'undefined' && adList['activity_index_float']['code'] == 0) adShow("activity_index_float");
+		</script>
+		<script>
+			adShow("index_hot_goods");
+		</script>
+		<!-- 新模板楼层开始 -->
+
+		<div class="IN_plate">
+			<div class="plate_box" data-nblock-id="bgweb/index/plateBlock?plate_id=373" style="width: 1200px; height: 540px; margin-bottom: 0px;">
+				<div class="plate_box_tabs" style="top: 30px;">
+					<a class='hover' href='javascript:;' data-plate-id='373'>热门</a><span>|</span>
+					<a href='javascript:;' data-plate-id='433'>夹克</a><span>|</span>
+					<a href='javascript:;' data-plate-id='434'>长袖衬衫</a><span>|</span>
+					<a href='javascript:;' data-plate-id='435'>裤装</a>
+				</div>
+				<div class="plate_box_content plate_box_373" data-plate-code="xinmuban20160826" data-bgtj="plate|nanzhuang20160826"></div>
+			</div>
+			<div class="plate_box" data-nblock-id="bgweb/index/plateBlock?plate_id=404" style="width: 1200px; height: 540px; margin-bottom: 0px;">
+				<div class="plate_box_tabs" style="top: 30px;">
+					<a class='hover' href='javascript:;' data-plate-id='404'>热门</a><span>|</span>
+					<a href='javascript:;' data-plate-id='436'>夹克</a><span>|</span>
+					<a href='javascript:;' data-plate-id='437'>卫衣</a><span>|</span>
+					<a href='javascript:;' data-plate-id='438'>裤装</a>
+				</div>
+				<div class="plate_box_content plate_box_404" data-plate-code="xinmuban20160826" data-bgtj="plate|nvzhuang20160831"></div>
+			</div>
+			<div class="plate_box" data-nblock-id="bgweb/index/plateBlock?plate_id=424" style="width: 1200px; height: 540px; margin-bottom: 0px;">
+				<div class="plate_box_tabs" style="top: 30px;">
+					<a class='hover' href='javascript:;' data-plate-id='424'>热门</a><span>|</span>
+					<a href='javascript:;' data-plate-id='564'>夹克卫衣</a><span>|</span>
+					<a href='javascript:;' data-plate-id='443'>衬衫T恤</a><span>|</span>
+					<a href='javascript:;' data-plate-id='444'>裤装裙装</a><span>|</span>
+					<a href='javascript:;' data-plate-id='445'>潮鞋</a>
+				</div>
+				<div class="plate_box_content plate_box_424" data-plate-code="xinmuban20160826" data-bgtj="plate|chaopai09118"></div>
+			</div>
+			<div class="plate_box" data-nblock-id="bgweb/index/plateBlock?plate_id=405" style="width: 1200px; height: 540px; margin-bottom: 0px;">
+				<div class="plate_box_tabs" style="top: 30px;">
+					<a class='hover' href='javascript:;' data-plate-id='405'>热门</a><span>|</span>
+					<a href='javascript:;' data-plate-id='503'>跑步鞋</a><span>|</span>
+					<a href='javascript:;' data-plate-id='504'>篮球鞋</a><span>|</span>
+					<a href='javascript:;' data-plate-id='505'>运动服</a>
+				</div>
+				<div class="plate_box_content plate_box_405" data-plate-code="xinmuban20160826" data-bgtj="plate|sports20161025"></div>
+			</div>
+			<div class="plate_box" data-nblock-id="bgweb/index/plateBlock?plate_id=402" style="width: 1200px; height: 540px; margin-bottom: 0px;">
+				<div class="plate_box_tabs" style="top: 30px;">
+					<a class='hover' href='javascript:;' data-plate-id='402'>热门</a><span>|</span>
+					<a href='javascript:;' data-plate-id='439'>毛衣卫衣</a><span>|</span>
+					<a href='javascript:;' data-plate-id='440'>外套</a><span>|</span>
+					<a href='javascript:;' data-plate-id='441'>裤装</a>
+				</div>
+				<div class="plate_box_content plate_box_402" data-plate-code="xinmuban20160826" data-bgtj="plate|tongzhuang20160831"></div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			// 首页热门品牌
+			var hotBrandLi = $('.zyHot_Brand ul li');
+			var zyHot_Brand_li = hotBrandLi.length;
+			var zyHot_Brand_li_count = parseInt(zyHot_Brand_li / 5.1);
+			var zyHot_Brand_li_num = 0;
+			$('.zyHot_Brand ul li:nth-child(5n)').css('margin-right', '0');
+			$('.zyHot_Brand ul').width(($('.zyHot_Brand ul li').width() + 5) * $('.zyHot_Brand ul li').length - 5 * zyHot_Brand_li_count);
+			$('.rec_btn_rt').click(function(event) {
+				zyHot_Brand_li_num--;
+				if(zyHot_Brand_li_num < -zyHot_Brand_li_count) {
+					zyHot_Brand_li_num = -zyHot_Brand_li_count
+				}
+				$('.zyHot_Brand ul').stop().animate({
+					left: zyHot_Brand_li_num * 1200
+				}, 1000)
+				setTimeout(function() {
+					$('img').lazyload();
+				}, 1000)
+			});
+			$('.rec_btn_lf').click(function(event) {
+				zyHot_Brand_li_num++;
+				if(zyHot_Brand_li_num > 0) {
+					zyHot_Brand_li_num = 0
+				}
+				$('.zyHot_Brand ul').stop().animate({
+					left: zyHot_Brand_li_num * 1200
+				}, 1000)
+			});
+			// banner_box开始
+			$(function() {
+				$('.mbshop_home_page_V_banner_box').mbshop_home_page_V_banner({
+					// 轮播图播放速度
+					banner_speed: 2000,
+					// 需改变背景的盒子
+					bg_change: '.mbshop_home_page_Z_banner',
+					// 最外层盒子
+					banner_box: '.mbshop_home_page_V_banner_box',
+					// banner图片盒子及ul中的li
+					banner_pic: '.mbshop_home_page_V_banner_pic li',
+					// 右按钮
+					banner_right: '.mbshop_home_page_V_banner_btn_right',
+					// 左按钮
+					banner_left: '.mbshop_home_page_V_banner_btn_left',
+					// banner导航栏
+					banner_nav: '.mbshop_home_page_V_banner_nav',
+					// 导航栏菜单
+					banner_nav_menu: '.mbshop_home_page_V_banner_nav li',
+					// 导航添加类名
+					banner_nav_class: 'mbshop_home_page_V_banner_nav_click',
+					// Tab条自动切换配置
+					banner_tab_box_warp: '.mbshop_home_page_V_banner_nav',
+					// 事件启动开关
+					closeLi: true,
+				});
+				/*banner_box结束*/
+
+				// 声明需要效果的图片盒子
+				$('body').blink({
+					blink: $('body')
+				});
+				// 声明热门商品每个li划上的效果
+				$('.zyHot_Brand').zyHot_Brand_blink({
+					zyHot_Brand_blink: $('.zyHot_Brand')
+				});
+				$(".rec_btn_rt").click(function() {
+					$("#ad_index_hot_goods").find("img").each(function() {
+						if($(this).attr("src") == "http://s.banggo.com/pub7/images/mbshop/common/grey.gif") {
+							$(this).attr("src", $(this).attr("data-original"));
+						}
+					});
+				});
+			})
+		</script>
+		<!-- 分享下载分区start-->
+		<div class="getActId" id="ad_comom_share">
+		</div>
+		<script>
+			var all_brand = ["metersbonwe", "mecity", "kids", "moomoo"];
+			var host = window.location.host;
+			var is_brand = $.inArray(host.split(".")[0], all_brand);
+			if(is_brand < 0) adShow("comom_share")
+		</script>
+		<!-- 意见反馈弹出框start -->
+		<div class="index_opinion_popbox_mask"></div>
+		<!-- 意见反馈弹出时全屏的遮罩 -->
+		<div class="index_opinion_popbox">
+			<h2>
+                意见反馈
+                <img id="piccc1" src="http://s.banggo.com/pub7/images/mbshop/veoimg/Veo_double11_wap_pop_goods_close_666.png" alt="" />
+            </h2>
+			<form method="post" name="form1" id="form1" formaction="/feedback/SaveData">
+				<p>功能操作不方便？使用时遇到系统问题？或有更好的功能建议？欢迎您提出！</p>
+				<h6>1.您想对哪方面提出建议？</h6>
+				<div class="index_opinion_popbox_div1">
+					<div class="index_opinion_popbox_select">
+						<label><input name="type_code" rules='{"required":true}' type="radio" value="1" onclick="statusValidate()" /><i></i><span>功能意见</span></label>
+						<label><input name="type_code" rules='{"required":true}' type="radio" value="2" onclick="statusValidate()" /><i></i><span>页面意见</span></label>
+						<label><input name="type_code" rules='{"required":true}' type="radio" value="3" onclick="statusValidate()" /><i></i><span>新的需求</span></label>
+						<label><input name="type_code" rules='{"required":true}' type="radio" value="4" onclick="statusValidate()" /><i></i><span>操作意见</span></label>
+						<label><input name="type_code" rules='{"required":true}' type="radio" value="5" onclick="statusValidate()" /><i></i><span>其它</span></label>
+					</div>
+					<div class="index_opinion_popbox_info">
+						<span class="tips">• 请选择一项</span>
+						<span class="errorinfo">&nbsp;</span>
+					</div>
+				</div>
+				<h6>
+                    2.我们存在哪些不足？
+                    <label class="index_opinion_popbox_sum"><span>0</span>/140</label>
+                </h6>
+				<div class="index_opinion_popbox_div2">
+					<textarea id="content" name="content" rules='{"required":true ,"isNum":true}' messages='{"required": "• 请填写您的建议","isNum":"• 请勿超过140个字符"}' placeholder="请将您的建议或您遇到的问题告诉我们，我们会认真听取并集中反馈。" onblur="statusValidate()" maxlength="140"></textarea>
+					<div class="index_opinion_popbox_info">
+						<span class="tips">• 请填写您的建议</span>
+						<span class="errorinfo">&nbsp;</span>
+					</div>
+				</div>
+				<h6>3.请留下您的联系方式</h6>
+				<div class="index_opinion_popbox_div3">
+					<input id="user_contact" name="user_contact" type="text" value="" rules='{"required":true ,"isMobile":true}' messages='{"required": "• 请填写手机号","isMobile":"• 请填写正确的手机号"}' placeholder="请输入您的手机号" onblur="statusValidate()" />
+					<div class="index_opinion_popbox_info">
+						<span class="tips">• 请填写手机号</span>
+						<span class="errorinfo">&nbsp;</span>
+					</div>
+				</div>
+				<a class="index_opinion_popbox_button" id="sub">提交</a>
+			</form>
+		</div>
+		<script>
+			$(function() {
+				fromvalidate("#form1", "#sub", feedbackResponse, Request);
+
+				function feedbackResponse(responseText, statusText) {
+					if(statusText = 'success') {
+						alert('提交成功');
+						window.location.reload();
+					};
+				};
+			});
+			$(function() {
+				var isSelect = $('.index_opinion_popbox_select input:checked').length;
+				$('.index_opinion_popbox_button').click(function() {
+					if(!isSelect == 1) {
+						$('.index_opinion_popbox_div1 .tips').css('display', 'block');
+					} else {
+						$('.index_opinion_popbox_div1 .tips').css('display', 'none');
+					};
+				});
+			});
+			$('.index_opinion_popbox_select label').click(function() {
+				$('.index_opinion_popbox_div1 .tips').html('');
+			})
+
+			function statusValidate() {
+				setTimeout(function() {
+					var ifFir = !$('.index_opinion_popbox_div2 textarea').val() == "",
+						ifSec = $('.index_opinion_popbox_div3 .tips').css('display') == "none",
+						ifThr = $('.index_opinion_popbox_div3 .errorinfo label').css('display') == "none" || !$('.index_opinion_popbox_div3 .errorinfo label').hasClass('invalid'),
+						isSelect = $('.index_opinion_popbox_select input:checked').length;
+					if(ifFir && ifSec && ifThr && isSelect == 1) {
+						$('.index_opinion_popbox_button').addClass('index_opinion_popbox_button_on');
+					} else {
+						$('.index_opinion_popbox_button').removeClass('index_opinion_popbox_button_on');
+					}
+				}, 100)
+			};
+			$('#content').keyup(function() {
+				var length = $(this).val().length;
+				if(length <= 140) {
+					if(length == 140) {
+						$('.index_opinion_popbox_sum').addClass('index_opinion_popbox_sum_on');
+						$('.index_opinion_popbox_sum span').text(length);
+						$('.index_opinion_popbox_div2 .errorinfo').html('• 请勿超过140个字符');
+						$('.index_opinion_popbox_div2 .errorinfo').prev().css('display', 'none');
+					} else {
+						$('.index_opinion_popbox_sum').removeClass('index_opinion_popbox_sum_on');
+						$('.index_opinion_popbox_sum span').text(length);
+						$('.index_opinion_popbox_div2 .errorinfo').html('&nbsp;');
+						$('.index_opinion_popbox_div2 .errorinfo').prev().css('display', 'block');
+					}
+				}
+			});
+			//更换单选框复选框的样式
+			$(function() {
+				if($('.mbshop_radio').length > 0) {
+					$('body').delegate('.mbshop_radio', 'click', function() {
+						var select = $(this).children('input').prop('checked');
+						var name = $(this).children('input').prop('name');
+						if(select) {
+							$('.mbshop_radio').children("input[name=" + name + "]").next('i').html('\ue609').removeClass('iconfontselect');
+							$(this).children('i').html('\ue603').addClass('iconfontselect');
+						}
+					});
+				}
+				$('.mbshop_checkbox').click(function() {
+					var select = $(this).children('input').prop('checked');
+					if(select) {
+						$(this).children('i').html('\ue600').addClass('iconfontselect');
+					} else {
+						$(this).children('i').html('\ue602').removeClass('iconfontselect');
+					}
+				});
+			});
+		</script>
+		<script>
+			//点击li弹出意见反馈表的效果
+			$('.indexopinionpopbox').click(function(event) {
+				//意见反馈对话框显示
+				$('.index_opinion_popbox,.index_opinion_popbox_mask').show();
+			});
+			//点击弹出的意见反馈表的span关闭意见反馈对话框的效果
+			$('.index_opinion_popbox h2 img').click(function() {
+				//意见反馈对话框隐藏
+				$('.index_opinion_popbox,.index_opinion_popbox_mask').hide();
+			});
+		</script>
+		<!-- bottom -->
+		<div class="mbshop_bottomAllWidth">
+			<div class="mbshop_container">
+				<!-- guide -->
+				<div class="mbshop_bottom_guide">
+
+					<dl>
+						<dt>新手指南</dt>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=57">
+								注册新用户</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=58">
+								用户协议</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=59">
+								找回密码</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=60">
+								红包使用说明</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=61">
+								购物流程</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=62">
+								订单状态</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=63">
+								邦购币绑定与使用</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=166">
+								积分说明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送方式</dt>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=64">
+								配送范围</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=65">
+								订单拆分</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=66">
+								商品验货与签收</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=68">
+								发票制度</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=67">
+								支付方式</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=70">
+								退换货政策</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=69">
+								退换办理流程</a>
+						</dd>
+						<dd>
+							<a target="_blank" href="/article.shtml?art=71">
+								退款说明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>联系方式</dt>
+						<dd>
+							<a onclick="clickysf()" target="_blank">在线客服</a>
+						</dd>
+						<dd>
+							<a href="mailto:bgzs@metersbonwe.com">商家入驻：bgzs@metersbonwe.com</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="mbshop_bottomCopyright">
+					<p>CopyRight © 2000-2017, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司 banggo.com 沪ICP备05033127号 021-38119999</p>
+					<span>
+				<a href="http://www.miibeian.gov.cn/" target="_blank"><img src="http://s.banggo.com/pub7/images/mbshop/common/banggo.png" data-original="http://s.banggo.com/pub1/bgweb/default/images/lz_beian_h40.png" width="136" height="40" alt="网站备案信息"></a>
+				<a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov71zgzilhvn4inh27pfqd6h0hvwad254" target="_blank"><img src="http://s.banggo.com/pub7/images/mbshop/common/banggo.png" data-original="http://s.banggo.com/pub1/bgweb/default/images/lz_shgs_h40.png" width="118" height="40" alt="上海工商"></a>
+			</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="new_mbshop_topandconsult">
+			<a class="new_mbshop_btn_topred" href="javascript:;" title="回到顶部"></a>
+			<a class="mbshop_new_btn_onlineConsultred" onclick="clickysf()" title="在线咨询" target="imLogin"></a>
+		</div>
+
+		<!-- slowly move window -->
+		<div class="mbshop_openpop mbshop_commonSuggestion" style="display:none">
+			<!-- title -->
+			<div class="mbshop_openpop_title">
+				<span>信息提示框</span>
+				<a class="mbshop_openpop_Stclose" href="javascript:;" title="关闭"></a>
+			</div>
+			<!-- Frame -->
+			<div class="mbshop_openpop_con mbshop_commonSuggestionCon openpop_content">
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				//每次刷新页面更换验证码
+				refreshVerifyCode();
+			});
+			//lazyload
+			$(function() {
+				$("img").lazyload({
+					//threshold : 500,
+					effect: "fadeIn",
+					failure_limit: 20,
+					skip_invisible: true
+				});
+
+				$("li[class^='Zindex_span_position']").live("hover", function() {
+					$(this).find("img").each(function() {
+						if($(this).attr("src") == "http://s.banggo.com/pub7/images/mbshop/common/grey.gif") {
+							$(this).attr("src", $(this).attr("data-original"));
+						}
+					});
+				});
+				$(".mbshop_new_headtop_content").live("hover", function() {
+					$(this).find("img").each(function() {
+						if($(this).attr("src") == "http://s.banggo.com/pub1/bgweb/default/images/grey.gif") {
+							$(this).attr("src", $(this).attr("data-original"));
+						}
+					});
+				});
+			});
+
+			//回到顶部
+			$(window).scroll(function() {
+				var scrollValuex = parseInt($(document).scrollTop());
+				var floopyTopx = parseInt($(window).height());
+				if(scrollValuex > floopyTopx) {
+					$(".new_mbshop_btn_top,.new_mbshop_btn_topred").show();
+				} else {
+					$(".new_mbshop_btn_top,.new_mbshop_btn_topred").hide();
+				};
+			});
+			$(function() {
+				$(".new_mbshop_btn_top,.new_mbshop_btn_topred").mbshop_btn_returnTop();
+			});
+			//更换验证码
+			function refreshVerifyCode() {
+				if($('.verify_code').length > 0) {
+					var img = new Image;
+					img.onload = function() {
+						$('.verify_code').trigger('click');
+					};
+					img.src = $('.verify_code').attr('src');
+				}
+			}
+		</script>
+		<!-- 网易七鱼在线客服 -->
+		<script>
+			function clickysf() {
+				$.getJSON(consts('act') + '/Ajax/CheckLogin?callback=?&gateway=ture', function(data) {
+					if(data.status == '0' && typeof(data.userInfo.userid) == "undefined") {
+						window.location.href = consts('act') + "/login?r_url=" + encodeURIComponent(window.location.href);
+					} else {
+						openysf(data);
+					}
+				});
+			}
+
+			function openysf(data) {
+				$.getScript("//qiyukf.com/script/c9838238bb18fd79c8c6ccf8d96bd165.js", function() {
+					var jsonstr = {
+						uid: data.userInfo.uid,
+						name: data.userInfo.userid,
+						email: data.userInfo.email,
+						mobile: data.userInfo.mobile
+					}
+					//配置用户信息
+					ysf.config(jsonstr);
+					//新开页面打开网易七鱼客服聊天窗口
+					window.open(ysf.url());
+				});
+			}
+		</script>
+		<!-- mediaV指定广告跟踪 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "//hm.baidu.com/hm.js?0600094e16cec594db18b43c878d459f";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<script>
+			//聚合数据分析
+			var _mvq = _mvq || [];
+			_mvq.push(['$setAccount', 'm-249-0']);
+			_mvq.push(['$setGeneral', '', '', /*用户名*/ '', /*用户id*/ '']); //如果不传用户名、用户id，此句可以删掉
+			_mvq.push(['$logConversion']);
+		</script>
+
+		<script type="text/javascript">
+			var isreg = encodeURIComponent(getCookie('isreg'));
+			if(isreg) {
+				//MEDIA V广告代码 注册
+				try {
+					_mvq.push(['$logOrder', isreg, 0, "", "", "", "0"]);
+				} catch(err) {};
+				//清除cookie
+				setCookie('isreg', 0, 0, '/', '.' + getHost(window.location.href));
+			}
+		</script>
+		<!-- End of MEDIA V广告代码 Insight Tag  -->
+		</div>
+		<!-- 百度再营销 开始 -->
+		<script type="text/javascript">
+			(function(d) {
+				window.bd_cpro_rtid = "rjfvnjc";
+				var s = d.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";
+				var s0 = d.getElementsByTagName("script")[0];
+				s0.parentNode.insertBefore(s, s0);
+			})(document);
+		</script>
+		<!-- 百度再营销 结束 -->
+
+		<!-- 99click -->
+		<script type="text/javascript">
+			$(function() {
+				/**会员跟踪**/
+				var _ozuid = '' || 'anonymous';
+				//页面打开速度监测代码
+				var _oztime = (new Date()).getTime();
+			})
+		</script>
+
+		<!-- 思盈 -->
+		<script type="text/javascript">
+			(function(param) {
+				var c = {
+					query: [],
+					args: param || {}
+				};
+				c.query.push(["_setAccount", "630"]);
+				(window.__zpSMConfig = window.__zpSMConfig || []).push(c);
+			})(window.__zp_tag_params);
+		</script>
+		<script src="http://s.banggo.com/pub1/??/publish/bgweb/index/js/index.e2862168.js,/bgweb/public/js/jquery.cookie.js?v=201703071654,/bgweb/public/js/effect/mbshop_tab.js?v=201703071654,/bgweb/public/js/effect/mbshop_adv.js?v=201703071654,/bgcom/mediav/js/loader.js?v=201703071654,/bgcom/mediav/js/mba.js?v=201703071654,/bgcom/mediav/js/mba_dsp.js?v=201703071654,/bgweb/public/js/o_code.js?v=201703071654,/bgcom/common/js/bgindex.js?v=201703071654,/bgcom/siying/js/s.js?v=201703071654,/bgcom/siying/js/conversion.js?v=201703071654,/bgweb/public/js/jquery.form.js?v=201703071654,/bgweb/public/js/jquery.validate.js?v=201703071654,/bgweb/public/js/formvalidate.js?v=201703071654"></script>
+		<div id="scriptArea" style="display: none">
+			<script src="http://s.banggo.com/pub1/??/bgweb/public/js/backbone/underscore-min.js?v=201703071654,/bgweb/public/js/backbone/backbone-min.js?v=201703071654,/bgweb/public/js/ndoo/ndoo_slim.min.js?v=201703071654,/bgweb/public/js/ndoo/ndoo_ts.js?v=201703071654,/publish/bgweb/default/js/commonFunction.a9ee4112.js,/publish/bgweb/default/js/commonService.74cfabc2.js,/publish/bgweb/index/js/skipSecondBlock.6890a835.js,/publish/bgweb/index/js/plateBlock.b4c901da.js,/publish/bgweb/index/js/aClearBlock.22fb6bb6.js,/publish/bgweb/theme/js/renderPlateBlock.12123928.js"></script>
+			<script>
+				ndoo.vars.logUrl = '//service.banggo.com/mongolog/insert';
+				ndoo.vars.logLevel = BGWeb.Default.LogLevel.Off;
+				ndoo.vars.imgDefault = config_com.img_default;
+			</script>
+			<!-- pageScript -->
+			<div data-nblock-id="bgweb/index/skipSecondBlock" data-nblock-level="2" data-skip-url="" data-start-time=''></div>
+			<div data-nblock-id="bgweb/index/aClearBlock" data-nblock-level="1" data-aclear='1'></div>
+			<script>
+				ndoo.vars.getPlateDataUrl = 'http://bgact.banggo.com/plate/GetPlateContent?mark=index';
+				ndoo.vars.localStorageVersion = '20161630';
+				ndoo.vars.useLocalStorage = true;
+				// ndoo.vars.useLocalStorage = true;
+				ndoo.vars.imgDefault = config_com.img_default;
+			</script>
+			<!-- /pageScript -->
+			<script>
+				ndoo.init('bgweb/home/index')
+			</script>
+		</div>
+
+	</body>
+
+</html>
